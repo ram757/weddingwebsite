@@ -19,7 +19,7 @@ import './style.scss';
 const App = () => (
   <div className="app-wrapper">
     <Helmet
-      titleTemplate="6/20/20 - Ryan ❤️ Brigitte"
+      titleTemplate="6/20/20 - RM ❤️ BQ"
       defaultTitle="6/20/20"
     >
       <meta name="description" content="Wedding Website app built with React.js & Redux" />

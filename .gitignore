@@ -15,5 +15,5 @@ yarn-error.log
 # IntelliJ
 .idea
 
-#VSCode
+# VSCode
 .vscode
