@@ -1,24 +1,66 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Banner from './images/hedgehog_banner.jpg';
+import PropTypes from 'prop-types';
+import { Link, withRouter } from 'react-router-dom';
+import Paper from '@material-ui/core/Paper';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import { ROUTE_MAP } from 'containers/App/constants';
+import Banner from './images/pup_banner.jpg';
 import './style.scss';
 
-class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export const Header = withRouter((props) => <HeaderComponent {...props} />);
+
+class HeaderComponent extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    const { location } = this.props;
+    const route = this.getInitialRoute(location.pathname);
+    this.state = {
+      tab: route
+    };
+  }
+
+  getInitialRoute = (path) => {
+    const foundRoute = Object.values(ROUTE_MAP).find((route) => route === path);
+    return foundRoute || ROUTE_MAP.HOME;
+  };
+
+  handleChangeTab = (event, newValue) => {
+    this.setState({
+      tab: newValue
+    });
+  };
+
   render() {
+    const { tab: tabRoute } = this.state;
     return (
       <div className="header">
-        <img src={Banner} alt="hedgehog-banner" />
-        <div className="nav-bar">
-          <Link className="router-link" to="/">
-            Home
-          </Link>
-          <Link className="router-link" to="/bogus">
-            To Do
-          </Link>
-        </div>
+        <img src={Banner} alt="Ryan and Brigitte camping" />
+        <Paper square>
+          <Tabs
+            value={tabRoute}
+            indicatorColor="primary"
+            textColor="inherit"
+            variant="scrollable"
+            scrollButtons="on"
+            onChange={this.handleChangeTab}
+          >
+            <Tab label="Home" value={ROUTE_MAP.HOME} component={Link} to={ROUTE_MAP.HOME} className="nav-bar-item" />
+            <Tab label="RSVP" value={ROUTE_MAP.RSVP} component={Link} to={ROUTE_MAP.RSVP} disabled className="nav-bar-item" />
+            <Tab label="Wedding Party" value={ROUTE_MAP.WEDDING_PARTY} component={Link} to={ROUTE_MAP.WEDDING_PARTY} disabled className="nav-bar-item" />
+            <Tab label="Guest Accommodations" value={ROUTE_MAP.ACCOMMODATIONS} component={Link} to={ROUTE_MAP.ACCOMMODATIONS} disabled className="nav-bar-item" />
+            <Tab label="Pittsborg" value={ROUTE_MAP.PITTSBURGH} component={Link} to={ROUTE_MAP.PITTSBURGH} disabled className="nav-bar-item" />
+            <Tab label="Registry" value={ROUTE_MAP.REGISTRY} component={Link} to={ROUTE_MAP.REGISTRY} disabled className="nav-bar-item" />
+            <Tab label="FAQ" value={ROUTE_MAP.FAQ} component={Link} to={ROUTE_MAP.FAQ} className="nav-bar-item" />
+          </Tabs>
+        </Paper>
       </div>
     );
   }
 }
+
+HeaderComponent.propTypes = {
+  location: PropTypes.object,
+};
 
 export default Header;

@@ -13,3 +13,15 @@ export const LOAD_REPOS = 'boilerplate/App/LOAD_REPOS';
 export const LOAD_REPOS_SUCCESS = 'boilerplate/App/LOAD_REPOS_SUCCESS';
 export const LOAD_REPOS_ERROR = 'boilerplate/App/LOAD_REPOS_ERROR';
 export const DEFAULT_LOCALE = 'en';
+
+// APP ROUTE CONSTANTS
+export const ROUTE_MAP = {
+  HOME: '/',
+  RSVP: '/rsvp',
+  WEDDING_PARTY: '/weddingparty',
+  ACCOMMODATIONS: '/accommodations',
+  PITTSBURGH: '/pittsburgh',
+  REGISTRY: '/registry',
+  FAQ: '/faq',
+  EMPTY: ''
+};

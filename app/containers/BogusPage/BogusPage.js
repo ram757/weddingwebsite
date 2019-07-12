@@ -4,7 +4,6 @@
  * List of bogus stuff
  */
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import './style.scss';
 
 export default class BogusPage extends React.Component {
@@ -19,13 +18,6 @@ export default class BogusPage extends React.Component {
   render() {
     return (
       <div className="bogus-page">
-        <Helmet>
-          <title>To Do Page</title>
-          <meta
-            name="description"
-            content="Bogus page"
-          />
-        </Helmet>
         <h1>Stuff to do</h1>
         <ul>
           <li>
@@ -46,8 +38,10 @@ export default class BogusPage extends React.Component {
               Why are weddings so much damn work?
             </p>
           </li>
+          <li>
+            <p className="title"><i>and much more...</i></p>
+          </li>
         </ul>
-        <i>and much more...</i>
       </div>
     );
   }
