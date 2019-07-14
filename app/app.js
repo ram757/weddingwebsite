@@ -29,6 +29,7 @@ import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 import 'styles/theme.scss';
 
 import configureStore from './configureStore';
+import { stopFontOverride } from './helpers';
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
@@ -46,6 +47,7 @@ const initialState = {};
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
 
+// Render function to render the App
 const render = () => {
   ReactDOM.render(
     <Provider store={store}>
@@ -67,4 +69,8 @@ if (module.hot) {
   });
 }
 
+// Do not allow GMaps to override fonts
+stopFontOverride();
+
+// Render the application
 render();

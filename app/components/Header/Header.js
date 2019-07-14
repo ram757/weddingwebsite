@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { ROUTE_MAP } from 'containers/App/constants';
+import { ROUTE_MAP } from '../../containers/App/constants';
 import Banner from './images/pup_banner.jpg';
 import './style.scss';
 
@@ -35,7 +35,7 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
     const { tab: tabRoute } = this.state;
     return (
       <div className="header">
-        <img src={Banner} alt="Ryan and Brigitte camping" />
+        <img src={Banner} alt="Olive camping" />
         <Paper square>
           <Tabs
             value={tabRoute}
@@ -43,12 +43,13 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
             textColor="inherit"
             variant="scrollable"
             scrollButtons="on"
+            TabIndicatorProps={{ style: { backgroundColor: '#679458' } }}
             onChange={this.handleChangeTab}
           >
             <Tab label="Home" value={ROUTE_MAP.HOME} component={Link} to={ROUTE_MAP.HOME} className="nav-bar-item" />
             <Tab label="RSVP" value={ROUTE_MAP.RSVP} component={Link} to={ROUTE_MAP.RSVP} disabled className="nav-bar-item" />
             <Tab label="Wedding Party" value={ROUTE_MAP.WEDDING_PARTY} component={Link} to={ROUTE_MAP.WEDDING_PARTY} disabled className="nav-bar-item" />
-            <Tab label="Guest Accommodations" value={ROUTE_MAP.ACCOMMODATIONS} component={Link} to={ROUTE_MAP.ACCOMMODATIONS} disabled className="nav-bar-item" />
+            <Tab label="Guest Accommodations" value={ROUTE_MAP.ACCOMMODATIONS} component={Link} to={ROUTE_MAP.ACCOMMODATIONS} className="nav-bar-item" />
             <Tab label="Pittsborg" value={ROUTE_MAP.PITTSBURGH} component={Link} to={ROUTE_MAP.PITTSBURGH} disabled className="nav-bar-item" />
             <Tab label="Registry" value={ROUTE_MAP.REGISTRY} component={Link} to={ROUTE_MAP.REGISTRY} disabled className="nav-bar-item" />
             <Tab label="FAQ" value={ROUTE_MAP.FAQ} component={Link} to={ROUTE_MAP.FAQ} className="nav-bar-item" />

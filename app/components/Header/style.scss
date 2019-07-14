@@ -5,6 +5,14 @@
     display: block;
   }
 
+  .wedding-green {
+    background: #679458;
+
+    .darker {
+      color: #59844B;
+    }
+  }
+
   .nav-bar {
     text-align: center;
     width: 100%;
@@ -15,6 +23,9 @@
   .nav-bar-item {
     flex-grow: 1;
     max-width: 100%;
+    color: #59844B;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .router-link {

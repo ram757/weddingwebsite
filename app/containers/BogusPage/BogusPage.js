@@ -4,6 +4,7 @@
  * List of bogus stuff
  */
 import React from 'react';
+import SomebodySays from '../../components/SomebodySays';
 import './style.scss';
 
 export default class BogusPage extends React.Component {
@@ -40,6 +41,27 @@ export default class BogusPage extends React.Component {
           </li>
           <li>
             <p className="title"><i>and much more...</i></p>
+          </li>
+          <li>
+            <SomebodySays
+              avatar="Cyndaquil"
+              switchTo="Edgar"
+              headerText="Edgar sucks!"
+              headerTextAlt="Cyndaquil is soo coooool!"
+            />
+          </li>
+          <li>
+            <SomebodySays
+              avatar="Edgar"
+              headerText="This one just expands/collapses..."
+              collapsedComponent={<div>cats</div>}
+            />
+          </li>
+          <li>
+            <SomebodySays
+              avatar="Edgar"
+              headerText="This one just expands/collapses..."
+            />
           </li>
         </ul>
       </div>
