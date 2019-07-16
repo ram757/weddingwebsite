@@ -3,8 +3,11 @@
   margin-bottom: 10px;
 
   h1 {
-    font-size: 2em;
-    margin-bottom: 0.25em;
+    font-size: 2.5em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-top: 1em;
+    margin-bottom: .25em;
+    text-align: center;
   }
 
   img {
@@ -25,5 +28,10 @@
   .sub-text {
     font-size: 16px;
     font-weight: 200;
+  }
+
+  .header-hr-bar {
+    max-width: 500px;
+    margin-bottom: 2em;
   }
 }

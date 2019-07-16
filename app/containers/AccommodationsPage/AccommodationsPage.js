@@ -16,7 +16,7 @@ export default class AccommodationsPage extends React.Component {
     return false;
   }
 
-  renderMainAccommodation() {
+  renderMainAccommodationInfo() {
     return (
       <div>
         <div>
@@ -26,7 +26,9 @@ export default class AccommodationsPage extends React.Component {
         </div>
         <br />
         <div className="sub-text">
-          Please reference the Quirk/McDonald Wedding when reserving your room for a special rate. Reserve your room by [TBD]. Transportation will be provided to and from the wedding for guests staying in this hotel.
+          Please reference the Quirk/McDonald Wedding when reserving your room for a special rate.
+          Reserve your room by [TBD]. Transportation will be provided to and from the wedding for
+          guests staying in this hotel.
         </div>
       </div>
     );
@@ -36,20 +38,21 @@ export default class AccommodationsPage extends React.Component {
     return (
       <div className="accommodations-page">
         <Typography variant="h1">
-          Rooms have been reserved at:
+          Rooms have been reserved at
         </Typography>
+        <hr className="header-hr-bar" />
         <AddressCard
           className="center-card"
           titleText="The Omni William Penn Hotel"
-          bodyText={this.renderMainAccommodation()}
+          bodyText={this.renderMainAccommodationInfo()}
           buttonText="More Info"
           buttonLink="https://www.omnihotels.com/hotels/pittsburgh-william-penn"
         />
         <br />
         <Typography variant="h1">
-          Other nearby hotels:
+          Other nearby hotels
         </Typography>
-        <br />
+        <hr className="header-hr-bar" />
         <AddressCard
           className="center-card"
           titleText="Hilton Garden Inn Pittsburgh University Place"
@@ -84,7 +87,7 @@ export default class AccommodationsPage extends React.Component {
         <br />
         <br />
         <div className="stretch-container-16">
-          <img src={OliveSleeping} alt="Olive sleeping" style={{ padding: 0 }} />
+          <img src={OliveSleeping} alt="Olive sleeping" />
         </div>
       </div>
     );
