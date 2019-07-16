@@ -33,4 +33,14 @@
     color: black;
     margin-left: 0.4em;
   }
+
+  img {
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .stretch-container-16 {
+    margin: -16px;
+  }
 }

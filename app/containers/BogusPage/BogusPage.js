@@ -5,6 +5,7 @@
  */
 import React from 'react';
 import SomebodySays from '../../components/SomebodySays';
+import ToolTip from '@material-ui/core/Tooltip';
 // import GoogleMap from 'google-map-react';
 // import { G_MAPS_API_KEY } from '../../hidden';
 import './style.scss';
@@ -70,10 +71,29 @@ export default class BogusPage extends React.Component {
             />
           </li>
           <li>
-            <SomebodySays
-              avatar="Edgar"
-              headerText="This one just expands/collapses..."
-            />
+            <ToolTip
+              interactive
+              title={(
+                <React.Fragment>
+                  <SomebodySays
+                    avatar="Edgar"
+                    headerText="This one just expands/collapses..."
+                    collapsedComponent={(
+                      <div style={{ textAlign: 'center' }}>
+                        Edgar is soo coooooool!
+                      </div>
+                    )}
+                  />
+                </React.Fragment>
+              )}
+            >
+              <div style={{ width: '300px', margin: 0 }}>
+                <SomebodySays
+                  avatar="Edgar"
+                  headerText="Please hover over me..."
+                />
+              </div>
+            </ToolTip>
           </li>
           <li>
             <div style={{ height: '50vh', width: '50%' }}>

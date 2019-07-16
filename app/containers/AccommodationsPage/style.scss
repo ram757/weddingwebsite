@@ -30,8 +30,13 @@
     font-weight: 200;
   }
 
-  .header-hr-bar {
+  hr:nth-of-type(1) {
     max-width: 500px;
+    margin-bottom: 2em;
+  }
+
+  hr:nth-of-type(2) {
+    max-width: 340px;
     margin-bottom: 2em;
   }
 }
