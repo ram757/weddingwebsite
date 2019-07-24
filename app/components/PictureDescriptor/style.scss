@@ -1,14 +1,22 @@
-footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 3em 0;
-  border-top: 1px solid #666;
+.picture-descriptor-wrapper {
+  display: inline-flex;
+  justify-content: center;
 
-  a {
-    color: #41addd;
+  .image-container {
+    min-width: 200px;
+    max-width: 600px;
+    margin: 15px;
 
-    &:hover {
-      color: #6cc0e5;
+    .image-prop {
+      border-radius: 20px;
     }
   }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }

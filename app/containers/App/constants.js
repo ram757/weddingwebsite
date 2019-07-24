@@ -23,5 +23,6 @@ export const ROUTE_MAP = {
   PITTSBURGH: '/pittsburgh',
   REGISTRY: '/registry',
   FAQ: '/faq',
-  EMPTY: ''
+  EMPTY: '',
+  BOGUS: '/bogus'
 };

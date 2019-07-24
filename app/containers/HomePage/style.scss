@@ -1,7 +1,8 @@
 .home-page {
 
-  h2 {
+  h1 {
     font-size: 1.5em;
+    //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   section {
@@ -20,20 +21,6 @@
     //}
   }
 
-  form {
-    margin-bottom: 1em;
-
-    input {
-      outline: none;
-      border-bottom: 1px dotted #999;
-    }
-  }
-
-  span.at-prefix {
-    color: black;
-    margin-left: 0.4em;
-  }
-
   img {
     width: 100% !important;
     margin: 0 auto;
@@ -42,5 +29,15 @@
 
   .stretch-container-16 {
     margin: -16px;
+  }
+
+  .picture-body {
+    min-width: 200px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    font-size: 20px;
   }
 }

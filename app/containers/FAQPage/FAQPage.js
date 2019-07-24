@@ -18,6 +18,15 @@ export default class FAQPage extends React.Component {
   render() {
     return (
       <div className="faq-page">
+        <h1>Wedding FAQ</h1>
+        <ul>
+          <li>
+            <p className="title">Can Brandon McDonald wear basketball shorts?</p>
+            <p>
+              Fuck no.
+            </p>
+          </li>
+        </ul>
       </div>
     );
   }
