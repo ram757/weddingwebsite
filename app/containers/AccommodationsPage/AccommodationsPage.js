@@ -28,7 +28,7 @@ export default class AccommodationsPage extends React.Component {
         <div className="sub-text">
           Please reference the Quirk/McDonald Wedding when reserving your room for a special rate.
           Reserve your room by [TBD]. Transportation will be provided to and from the wedding for
-          guests staying in this hotel.
+          guests staying in this hotel.  <br /><br /> Direct link for booking will be provided soon.
         </div>
       </div>
     );

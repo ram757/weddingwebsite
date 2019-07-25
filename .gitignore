@@ -19,5 +19,4 @@ yarn-error.log
 .vscode
 
 # Hidden JS
-app/hidden.js
-app/containers/HomePage/images/*.jpg
+app/hidden/**/*
