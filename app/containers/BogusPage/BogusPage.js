@@ -4,8 +4,8 @@
  * List of bogus stuff
  */
 import React from 'react';
-import SomebodySays from '../../components/SomebodySays';
 import ToolTip from '@material-ui/core/Tooltip';
+import SomebodySays from '../../components/SomebodySays';
 // import GoogleMap from 'google-map-react';
 // import { G_MAPS_API_KEY } from '../../hidden';
 import './style.scss';

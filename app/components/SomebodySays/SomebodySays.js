@@ -119,7 +119,7 @@ const SomebodySays = (props) => {
         title={`${whoSays} says . . .`}
       />
       <CardContent style={{ padding: '8px' }}>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textSecondary" component="p" className="center-text">
           { getHeaderText() }
         </Typography>
       </CardContent>
