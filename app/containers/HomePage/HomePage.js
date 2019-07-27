@@ -55,7 +55,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     return (
       <div className="home-page">
         <section className="centered">
-          <h1>About Us</h1>
+          <h1 className="webkit-test">About Us</h1>
         </section>
         {
           this.renderPictureDescriptors()

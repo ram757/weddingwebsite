@@ -105,7 +105,7 @@ const SomebodySays = (props) => {
         avatar={
           (
             <Avatar
-              aria-label={`${whoSays} says . . .`}
+              aria-label={`${whoSays} says`}
               className={classes.avatar}
               src={getSourceFile(whoSays)}
             />
@@ -116,10 +116,10 @@ const SomebodySays = (props) => {
             getCardAction()
           )
         }
-        title={`${whoSays} says . . .`}
+        title={<div style={{ textAlign: 'center', marginLeft: '-15px' }}><b>{whoSays}<br />says</b></div>}
       />
       <CardContent style={{ padding: '8px' }}>
-        <Typography variant="body2" color="textSecondary" component="p" className="center-text">
+        <Typography variant="body2" color="textSecondary" component="span" className="center-text">
           { getHeaderText() }
         </Typography>
       </CardContent>
@@ -134,8 +134,8 @@ SomebodySays.propTypes = {
   avatar: PropTypes.oneOf(Object.values(AVATAR)),
   switchTo: PropTypes.oneOf(Object.values(AVATAR)),
   collapsedComponent: PropTypes.object,
-  headerText: PropTypes.string,
-  headerTextAlt: PropTypes.string,
+  headerText: PropTypes.oneOf([PropTypes.string, PropTypes.element]),
+  headerTextAlt: PropTypes.oneOf([PropTypes.string, PropTypes.element]),
 };
 
 export default SomebodySays;

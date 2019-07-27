@@ -7,7 +7,8 @@ export const AVATAR = {
 
 export const useStyles = makeStyles((theme) => ({
   card: {
-    maxWidth: 300,
+    maxWidth: '300px',
+    minWidth: '200px',
   },
   cardHeader: {
     paddingBottom: '0px'

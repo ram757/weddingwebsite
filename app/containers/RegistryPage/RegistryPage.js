@@ -12,8 +12,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 // import AddressCard from '../../components/AddressCard';
 // import PictureDescriptor from '../../components/PictureDescriptor/Loadable';
-import Salamander from './images/IMG_0850-min.jpg';
+import Salamander from './images/salamander.jpg';
 import CrateAndBarrel from './images/crate_and_barrel.jpg';
+import CampingPicture from '../../hidden/images/rm_bq_olive_camping.jpg';
 import './style.scss';
 
 export default function RegistryPage() {
@@ -38,8 +39,8 @@ export default function RegistryPage() {
         Your presence at Ryan and Brigitte&apos;s wedding will be the greatest gift of all!
       </Typography>
       <Typography variant="h2">
-        But if you are compelled by extreme generosity, we thank you in advance:<br /><br />
-        We are registred at
+        But if you are compelled by extreme generosity, we thank you in advance!<br /><br />
+        We are registered at
       </Typography>
       <hr className="header-hr-bar" />
       <div style={{ display: 'inline-flex', justifyContent: 'space-evenly', width: '100%', flexWrap: 'wrap' }}>
@@ -99,6 +100,9 @@ export default function RegistryPage() {
             </Button>
           </CardActions>
         </Card>
+      </div>
+      <div className="stretch-container-16">
+        <img src={CampingPicture} alt="Ryan, Brigitte and Olive camping" />
       </div>
     </div>
   );

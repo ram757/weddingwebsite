@@ -3,7 +3,6 @@
 
   h1 {
     font-size: 3em;
-    margin-bottom: -.5em;
     font-weight: normal;
     //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     //font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -12,9 +11,11 @@
 
   section {
     margin: 3em auto;
+    //margin: 0;
 
     &:first-child {
-      margin-top: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     &.centered {
@@ -41,5 +42,14 @@
     justify-content: center;
     margin: 15px;
     font-size: 24px;
+  }
+
+  .webkit-test {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 20px 0 0px 0;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 }

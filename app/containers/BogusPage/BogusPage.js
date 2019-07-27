@@ -77,12 +77,9 @@ export default class BogusPage extends React.Component {
                 <React.Fragment>
                   <SomebodySays
                     avatar="Edgar"
-                    headerText="This one just expands/collapses..."
-                    collapsedComponent={(
-                      <div style={{ textAlign: 'center' }}>
-                        Edgar is soo coooooool!
-                      </div>
-                    )}
+                    switchTo="Cyndaquil"
+                    headerText="Get dat tooltip"
+                    headerTextAlt="cats cats cats"
                   />
                 </React.Fragment>
               )}
@@ -90,7 +87,9 @@ export default class BogusPage extends React.Component {
               <div style={{ width: '300px', margin: 0 }}>
                 <SomebodySays
                   avatar="Edgar"
+                  switchTo="Cyndaquil"
                   headerText="Please hover over me..."
+                  headerTextAlt="I like cats"
                 />
               </div>
             </ToolTip>
