@@ -12,6 +12,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from '../HomePage/Loadable';
 import BogusPage from '../BogusPage/Loadable';
 import AccommodationsPage from '../AccommodationsPage/Loadable';
+import RegistryPage from '../RegistryPage/Loadable';
 import FAQPage from '../FAQPage/Loadable';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -28,7 +29,7 @@ const App = () => (
         {/*<Route exact path={ROUTE_MAP.WEDDING_PARTY} component={BogusPage} />*/}
         <Route exact path={ROUTE_MAP.ACCOMMODATIONS} component={AccommodationsPage} />
         {/*<Route exact path={ROUTE_MAP.PITTSBURGH} component={BogusPage} />*/}
-        {/*<Route exact path={ROUTE_MAP.REGISTRY} component={BogusPage} />*/}
+        <Route exact path={ROUTE_MAP.REGISTRY} component={RegistryPage} />
         <Route exact path={ROUTE_MAP.BOGUS} component={BogusPage} />
         <Route path={ROUTE_MAP.FAQ} component={FAQPage} />
         <Route path={ROUTE_MAP.EMPTY} component={HomePage} />

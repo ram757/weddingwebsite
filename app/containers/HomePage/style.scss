@@ -1,11 +1,13 @@
 .home-page {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
   h1 {
     font-size: 3em;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     margin-bottom: -.5em;
     font-weight: normal;
     //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   }
 
   section {
@@ -18,10 +20,6 @@
     &.centered {
       text-align: center;
     }
-
-    //p {
-    //  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    //}
   }
 
   img {
@@ -35,6 +33,7 @@
   }
 
   .picture-body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     min-width: 200px;
     max-width: 600px;
     display: flex;

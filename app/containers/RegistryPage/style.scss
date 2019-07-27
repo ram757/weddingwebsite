@@ -1,0 +1,44 @@
+.registry-page {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  h1 {
+    font-size: 2.5em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-top: 1em;
+    margin-bottom: .25em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    text-align: center;
+  }
+
+  img {
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .stretch-container-16 {
+    margin: -16px;
+  }
+
+  .center-item {
+    text-align: center;
+  }
+
+  hr:nth-of-type(1) {
+    max-width: 1500px;
+    margin-bottom: 2em;
+  }
+
+  //hr:nth-of-type(2) {
+  //  max-width: 340px;
+  //  margin-bottom: 2em;
+  //}
+}

@@ -9,11 +9,12 @@ function PictureDescriptor(props) {
     image,
     imageAlt,
     imagePosition,
-    body
+    body,
+    imgContainerStyle
   } = props;
 
   const imageContainer = (
-    <div className="image-container">
+    <div className="image-container" style={imgContainerStyle}>
       <img src={image} alt={imageAlt} className="image-prop" />
     </div>
   );
@@ -79,6 +80,7 @@ PictureDescriptor.propTypes = {
   image: PropTypes.string,
   imageAlt: PropTypes.string,
   body: PropTypes.element,
+  imgContainerStyle: PropTypes.object,
 };
 
 export default PictureDescriptor;
