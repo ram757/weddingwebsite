@@ -35,14 +35,26 @@ export default function RegistryPage() {
 
   return (
     <div className="registry-page">
+      <div className="text-test">
+        <span>R</span>
+        <span>E</span>
+        <span>G</span>
+        <span>I</span>
+        <span>S</span>
+        <span>T</span>
+        <span>R</span>
+        <span>Y</span>
+      </div>
       <Typography variant="h1">
         Your presence at Ryan and Brigitte&apos;s wedding will be the greatest gift of all!
       </Typography>
       <Typography variant="h2">
         But if you are compelled by extreme generosity, we thank you in advance!<br /><br />
-        We are registered at
       </Typography>
       <hr className="header-hr-bar" />
+      <Typography variant="h2">
+        We are registered at
+      </Typography>
       <div style={{ display: 'inline-flex', justifyContent: 'space-evenly', width: '100%', flexWrap: 'wrap' }}>
         <Card className={classes.card}>
           <CardActionArea>
