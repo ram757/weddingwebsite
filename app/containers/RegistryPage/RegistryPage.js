@@ -35,7 +35,7 @@ export default function RegistryPage() {
 
   return (
     <div className="registry-page">
-      <div className="text-test">
+      <div className="text-title-crunch">
         <span>R</span>
         <span>E</span>
         <span>G</span>

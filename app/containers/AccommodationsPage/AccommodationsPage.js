@@ -37,7 +37,7 @@ export default class AccommodationsPage extends React.Component {
   render() {
     return (
       <div className="accommodations-page">
-        <div className="text-test">
+        <div className="text-title-crunch">
           <span>A</span>
           <span>C</span>
           <span>C</span>
@@ -100,8 +100,6 @@ export default class AccommodationsPage extends React.Component {
           buttonText="More Info"
           buttonLink="https://www.monaco-pittsburgh.com/"
         />
-        <br />
-        <br />
         <div className="stretch-container-16">
           <img src={OliveSleeping} alt="Olive sleeping" />
         </div>

@@ -7,7 +7,7 @@ import './style.scss';
 export default function FAQPage() {
   return (
     <div className="faq-page">
-      <div className="text-test">
+      <div className="text-title-crunch">
         <span>Q</span>
         <span>U</span>
         <span>E</span>
@@ -18,12 +18,11 @@ export default function FAQPage() {
         <span>N</span>
         <span>S</span>
       </div>
-      {/*<h1>Wedding FAQ</h1>*/}
       <ul>
         <li>
           <p className="title">Is the wedding outside?</p>
           <p>
-            Yes.  The whole thing.  It&apos;s all outside.  The reception area will located under a tent.
+            Yes.  The whole thing.  It&apos;s all outside.  The reception area will be located under a tent.
           </p>
         </li>
         <li>
