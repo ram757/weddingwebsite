@@ -20,7 +20,7 @@ export default class AccommodationsPage extends React.Component {
     return (
       <div>
         <div>
-          530 William Penn Pl
+          530 William Penn Pl,
           <br />
           Pittsburgh, PA 15219
         </div>

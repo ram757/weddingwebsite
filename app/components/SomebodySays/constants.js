@@ -13,8 +13,12 @@ export const useStyles = makeStyles((theme) => ({
   cardHeader: {
     paddingBottom: '0px'
   },
+  cardTitle: {
+    textAlign: 'center',
+    marginLeft: '-15px'
+  },
   cardContent: {
-    padding: '10px'
+    padding: '8px'
   },
   media: {
     height: 0,

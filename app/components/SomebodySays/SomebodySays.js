@@ -119,7 +119,7 @@ const SomebodySays = (props) => {
         title={<div style={{ textAlign: 'center', marginLeft: '-15px' }}><b>{whoSays}<br />says</b></div>}
       />
       <CardContent style={{ padding: '8px' }}>
-        <Typography variant="body2" color="textSecondary" component="span" className="center-text">
+        <Typography variant="body2" color="textSecondary" component="div" style={{ textAlign: 'center' }}>
           { getHeaderText() }
         </Typography>
       </CardContent>
@@ -134,8 +134,8 @@ SomebodySays.propTypes = {
   avatar: PropTypes.oneOf(Object.values(AVATAR)),
   switchTo: PropTypes.oneOf(Object.values(AVATAR)),
   collapsedComponent: PropTypes.object,
-  headerText: PropTypes.oneOf([PropTypes.string, PropTypes.element]),
-  headerTextAlt: PropTypes.oneOf([PropTypes.string, PropTypes.element]),
+  headerText: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.element]),
+  headerTextAlt: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.element]),
 };
 
 export default SomebodySays;

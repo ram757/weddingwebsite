@@ -2,6 +2,7 @@
  * FAQPage
  */
 import React from 'react';
+import EdgarCreation from './images/the_creation_of_edgar.jpg';
 import './style.scss';
 
 export default function FAQPage() {
@@ -47,12 +48,27 @@ export default function FAQPage() {
           </p>
         </li>
         <li>
+          <p className="title">When will the official Wedding Invitations be sent?</p>
+          <p>
+            Sometime before the wedding.
+          </p>
+        </li>
+        <li>
+          <p className="title">When should I RSVP by?</p>
+          <p>
+            Before the date listed on your Wedding Invitation (likely May 20th, 2020).
+          </p>
+        </li>
+        <li>
           <p className="title">Can Brandon McDonald wear basketball shorts?</p>
           <p>
             Hell no.
           </p>
         </li>
       </ul>
+      <div className="stretch-container-16">
+        <img src={EdgarCreation} alt="The Creation of Edgar" />
+      </div>
     </div>
   );
 }

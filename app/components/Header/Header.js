@@ -50,7 +50,7 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
             <Tab label="RSVP" value={ROUTE_MAP.RSVP} component={Link} to={ROUTE_MAP.RSVP} disabled className="nav-bar-item" />
             <Tab label="Wedding Party" value={ROUTE_MAP.WEDDING_PARTY} component={Link} to={ROUTE_MAP.WEDDING_PARTY} disabled className="nav-bar-item" />
             <Tab label="Guest Accommodations" value={ROUTE_MAP.ACCOMMODATIONS} component={Link} to={ROUTE_MAP.ACCOMMODATIONS} className="nav-bar-item" />
-            <Tab label="Pittsburgh" value={ROUTE_MAP.PITTSBURGH} component={Link} to={ROUTE_MAP.PITTSBURGH} disabled className="nav-bar-item" />
+            <Tab label="Pittsburgh" value={ROUTE_MAP.PITTSBURGH} component={Link} to={ROUTE_MAP.PITTSBURGH} className="nav-bar-item" />
             <Tab label="Registry" value={ROUTE_MAP.REGISTRY} component={Link} to={ROUTE_MAP.REGISTRY} className="nav-bar-item" />
             <Tab label="FAQ" value={ROUTE_MAP.FAQ} component={Link} to={ROUTE_MAP.FAQ} className="nav-bar-item" />
           </Tabs>

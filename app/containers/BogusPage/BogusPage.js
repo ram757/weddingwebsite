@@ -5,22 +5,26 @@
  */
 import React from 'react';
 import ToolTip from '@material-ui/core/Tooltip';
-import SomebodySays from '../../components/SomebodySays';
+import Button from '@material-ui/core/Button';
 // import GoogleMap from 'google-map-react';
-// import { G_MAPS_API_KEY } from '../../hidden';
+import MapMarker from '../../components/MapMarker/MapMarker';
+import {generateHash} from '../HomePage/constants';
+import { G_MAPS_API_KEY, PGH_LOCATIONS } from '../../hidden/hidden';
+import SomebodySays from '../../components/SomebodySays';
+import MapMarkerSays from '../../components/MapMarkerSays/MapMarkerSays';
+import { AVATAR } from '../../components/SomebodySays/constants';
 import './style.scss';
-
-// const TestComponent = ({ text }) => <div>{text}</div>;
 
 export default class BogusPage extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
 
+  // 40.439220, -79.947344
   static defaultProps = {
     center: {
-      lng: -73.511592,
-      lat: 41.045260
+      lng: -79.947344,
+      lat: 40.439220
     },
-    zoom: 11
+    zoom: 15
   };
 
   // Since state and props are static,
@@ -95,18 +99,53 @@ export default class BogusPage extends React.Component {
             </ToolTip>
           </li>
           <li>
-            <div style={{ height: '50vh', width: '50%' }}>
+            <div style={{ height: '100vh', width: '80%', textAlign: 'center' }}>
               G-maps dawg
+              <div style={{ width: '250px', margin: '0' }}>
+                <SomebodySays
+                  avatar="Cyndaquil"
+                  headerText={(
+                    <div>
+                      IT&apos;S GONNA BE BUMPIN!!!!
+                      <br />
+                      This is where the wedding is at!!!
+                    </div>
+                  )}
+                  collapsedComponent={(
+                    <div>
+                      <Button
+                        style={{ textTransform: 'unset', textDecoration: 'underline' }}
+                        target="_blank"
+                        href={'https://maps.google.com/?q=1 Schenley Drive, Pittsburgh, PA 15213'}
+                        rel="noopener noreferer"
+                      >
+                        Phipps Conservatory and Botanical Gardens
+                      </Button>
+                    </div>
+                  )}
+                />
+              </div>
+              <br />
+              <MapMarkerSays
+                whoSays={AVATAR.CYNDAQUIL}
+                headerText={(
+                  <div>
+                    IT&apos;S GONNA BE BUMPIN!!!!
+                    <br />
+                    This is where the wedding is at!!!
+                  </div>
+                )}
+                markerLocation="1 Schenley Drive, Pittsburgh, PA 15213"
+                buttonContent="Phipps Conservatory and Botanical Gardens"
+              />
               {/*<GoogleMap*/}
                 {/*bootstrapURLKeys={{ key: G_MAPS_API_KEY }}*/}
-                {/*defaultCenter={AccommodationsPage.defaultProps.center}*/}
-                {/*defaultZoom={AccommodationsPage.defaultProps.zoom}*/}
+                {/*defaultCenter={BogusPage.defaultProps.center}*/}
+                {/*defaultZoom={BogusPage.defaultProps.zoom}*/}
               {/*>*/}
-                {/*<TestComponent*/}
-                  {/*lat={41.045260}*/}
-                  {/*lng={-73.511592}*/}
-                  {/*text="BUTTS"*/}
-                {/*/>*/}
+                {/*{*/}
+                  {/*PGH_LOCATIONS.map((pghItem) => (<MapMarker key={generateHash(10)} {...pghItem} />))*/}
+                {/*}*/}
               {/*</GoogleMap>*/}
             </div>
           </li>
