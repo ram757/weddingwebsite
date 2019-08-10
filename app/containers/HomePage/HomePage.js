@@ -6,9 +6,9 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import PictureDescriptor from '../../components/PictureDescriptor/Loadable';
 import { HOME_PAGE_CONTENT } from '../../hidden/hidden';
+import { generateHash } from '../../utils/helpers';
 import OliveEdgarYard from './images/olive_edgar_yard.jpg';
 import './style.scss';
-import {generateHash} from "./constants";
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 

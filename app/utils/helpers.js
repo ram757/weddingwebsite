@@ -12,3 +12,10 @@ export const stopFontOverride = () => {
     insertBefore.call(head, newElement, referenceElement);
   };
 };
+
+export const generateHash = (length) => {
+  if (length < 1 || length > 36) {
+    length = 10;
+  }
+  return Math.random().toString(36).substring(length);
+};

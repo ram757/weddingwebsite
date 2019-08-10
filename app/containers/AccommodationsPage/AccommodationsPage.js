@@ -3,20 +3,27 @@
  */
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
+import GoogleMap from 'google-map-react';
+import MapMarker from '../../components/MapMarker';
+import { generateHash } from '../../utils/helpers';
+import { G_MAPS_API_KEY } from '../../hidden/hidden';
 import AddressCard from '../../components/AddressCard';
+import { HOTEL_LOCATIONS } from './constants';
 import OliveSleeping from './images/olive_sleeping.jpg';
 import './style.scss';
 
-export default class AccommodationsPage extends React.Component {
+export default class AccommodationsPage extends React.PureComponent {
   // eslint-disable-line react/prefer-stateless-function
 
-  // Since state and props are static,
-  // there's no need to re-render this component
-  shouldComponentUpdate() {
-    return false;
-  }
+  static defaultMapProps = {
+    center: {
+      lat: 40.439010,
+      lng: -79.979215,
+    },
+    zoom: 14
+  };
 
-  renderMainAccommodationInfo() {
+  static renderMainAccommodationInfo() {
     return (
       <div>
         <div>
@@ -31,6 +38,12 @@ export default class AccommodationsPage extends React.Component {
           guests staying in this hotel.  <br /><br /> Direct link for booking will be provided soon.
         </div>
       </div>
+    );
+  }
+
+  static renderHotelPins() {
+    return (
+      HOTEL_LOCATIONS.map((hotelItem) => (<MapMarker key={generateHash(10)} {...hotelItem} />))
     );
   }
 
@@ -60,7 +73,7 @@ export default class AccommodationsPage extends React.Component {
         <AddressCard
           className="center-card"
           titleText="The Omni William Penn Hotel"
-          bodyText={this.renderMainAccommodationInfo()}
+          bodyText={AccommodationsPage.renderMainAccommodationInfo()}
           buttonText="More Info"
           buttonLink="https://www.omnihotels.com/hotels/pittsburgh-william-penn"
         />
@@ -100,8 +113,20 @@ export default class AccommodationsPage extends React.Component {
           buttonText="More Info"
           buttonLink="https://www.monaco-pittsburgh.com/"
         />
+        <br />
+        <div style={{ height: '60vh', maxWidth: '600px', margin: 'auto' }}>
+          <GoogleMap
+            bootstrapURLKeys={{ key: G_MAPS_API_KEY }}
+            defaultCenter={AccommodationsPage.defaultMapProps.center}
+            defaultZoom={AccommodationsPage.defaultMapProps.zoom}
+          >
+            {
+              AccommodationsPage.renderHotelPins()
+            }
+          </GoogleMap>
+        </div>
         <div className="stretch-container-16">
-          <img src={OliveSleeping} alt="Olive sleeping" />
+          <img src={OliveSleeping} alt="Olive sleeping" className="footer-image"/>
         </div>
       </div>
     );

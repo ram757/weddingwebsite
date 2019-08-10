@@ -29,7 +29,7 @@ import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 import 'styles/theme.scss';
 
 import configureStore from './configureStore';
-import { stopFontOverride } from './helpers';
+import { stopFontOverride } from './utils/helpers';
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)

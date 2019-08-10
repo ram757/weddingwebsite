@@ -8,7 +8,7 @@ import ToolTip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
 // import GoogleMap from 'google-map-react';
 import MapMarker from '../../components/MapMarker/MapMarker';
-import {generateHash} from '../HomePage/constants';
+import { generateHash } from '../../utils/helpers';
 import { G_MAPS_API_KEY, PGH_LOCATIONS } from '../../hidden/hidden';
 import SomebodySays from '../../components/SomebodySays';
 import MapMarkerSays from '../../components/MapMarkerSays/MapMarkerSays';
