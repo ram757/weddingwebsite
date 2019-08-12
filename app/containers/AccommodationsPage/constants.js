@@ -11,11 +11,12 @@ export const HOTEL_LOCATIONS = [
         whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            Amazing hotel located in the Downtown area of Pittsburgh!  A hotel block has been reserved here.
+            The Omni William Penn Hotel!  A hotel block has been reserved here.
+            <a href="https://www.omnihotels.com/hotels/pittsburgh-william-penn/weddings/quirk-and-mcdonald-wedding-06192020" target="_blank" rel="noopener noreferrer"> Click here to book a room!</a> 
           </div>
         )}
         markerLocation="530 William Penn Pl, Pittsburgh, PA 15219"
-        buttonContent="The Omni William Penn Hotel"
+        buttonContent="Open in Google Maps"
       />
     )
   },
@@ -24,14 +25,14 @@ export const HOTEL_LOCATIONS = [
     lng: -79.959401,
     hoverComponent: (
       <MapMarkerSays
-        whoSays={AVATAR.CYNDAQUIL}
+        whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            Cheaper hotel located right in Oakland.  Very close to the wedding venue.
+            Hilton Garden Inn Pittsburgh University Place!  A second hotel block will soon be reserved here.
           </div>
         )}
         markerLocation="3454 Forbes Ave, Pittsburgh, PA 15213"
-        buttonContent="Hilton Garden Inn Pittsburgh University Place"
+        buttonContent="Open in Google Maps"
       />
     )
   },
@@ -43,11 +44,11 @@ export const HOTEL_LOCATIONS = [
         whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            Nice hotel located right in Oakland.  Pretty close to the wedding venue.
+            Residence Inn by Marriott Pittsburgh Oakland/University Place
           </div>
         )}
         markerLocation="3341 Forbes Ave, Pittsburgh, PA 15213"
-        buttonContent="Residence Inn by Marriott Pittsburgh Oakland/University Place"
+        buttonContent="Open in Google Maps"
       />
     )
   },
@@ -56,14 +57,14 @@ export const HOTEL_LOCATIONS = [
     lng: -79.959956,
     hoverComponent: (
       <MapMarkerSays
-        whoSays={AVATAR.CYNDAQUIL}
+        whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            A cheaper hotel option that is just outside of the Oakland area.
+            Hotel Indigo Pittsburgh - Technology Center
           </div>
         )}
         markerLocation="329 Technology Dr, Pittsburgh, PA 15219"
-        buttonContent="Hotel Indigo Pittsburgh - Technology Center"
+        buttonContent="Open in Google Maps"
       />
     )
   },
@@ -75,11 +76,11 @@ export const HOTEL_LOCATIONS = [
         whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            Another hotel in the downtown area.
+            Kimpton Hotel Monaco Pittsburgh
           </div>
         )}
         markerLocation="620 William Penn Pl, Pittsburgh, PA 15219"
-        buttonContent="Kimpton Hotel Monaco Pittsburgh"
+        buttonContent="Open in Google Maps"
       />
     )
   },

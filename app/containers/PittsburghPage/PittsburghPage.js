@@ -2,7 +2,8 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import GoogleMap from 'google-map-react';
 import MapMarker from '../../components/MapMarker';
-import { generateHash } from '../../utils/helpers';
+import MobileDisclaimer from '../../components/MobileDisclaimer'
+import { generateHash, isMobileDevice } from '../../utils/helpers';
 import { G_MAPS_API_KEY, PGH_LOCATIONS } from '../../hidden/hidden';
 import PittsburghBanner from './images/pittsburgh_banner.jpg';
 import './style.scss';
@@ -37,7 +38,10 @@ export default class PittsburghPage extends React.PureComponent { // eslint-disa
         <Typography variant="h2">
           Get the most out of your Pittsburgh trip by hearing what Cyndaquil Says!<br /><br />
         </Typography>
-        <div style={{ height: '125vh', paddingLeft: '5%', paddingRight: '5%' }}>
+        <MobileDisclaimer
+          text="On mobile devices, please click on the map markers to show hover-over content."
+        />
+        <div style={{ height: isMobileDevice() ? '70vh' : '125vh', paddingLeft: '5%', paddingRight: '5%' }}>
           <GoogleMap
             bootstrapURLKeys={{ key: G_MAPS_API_KEY }}
             defaultCenter={PittsburghPage.defaultMapProps.center}

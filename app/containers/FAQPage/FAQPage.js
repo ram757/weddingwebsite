@@ -60,9 +60,16 @@ export default function FAQPage() {
           </p>
         </li>
         <li>
+          <p className="title">Can I bring a guest?</p>
+          <p>
+            IF your invitation says "GUEST" on it, then you may bring a guest.  If you would really like to bring a guest that 
+            was not invited, please speak with us.
+          </p>
+        </li>
+        <li>
           <p className="title">Can Brandon McDonald wear basketball shorts?</p>
           <p>
-            Hell no.
+            Hell no.  He is required to wear a tuxedo.
           </p>
         </li>
       </ul>

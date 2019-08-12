@@ -14,6 +14,9 @@ function MapMarker(props) {
       <ToolTip
         interactive
         disableFocusListener
+        disableTouchListener
+        leaveTouchDelay={10000}
+        enterTouchDelay={300}
         title={(
           <React.Fragment>
             { hoverComponent }
