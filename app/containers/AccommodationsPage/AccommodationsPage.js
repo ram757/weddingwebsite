@@ -136,7 +136,7 @@ export default class AccommodationsPage extends React.PureComponent {
         />
         <br />
         <MobileDisclaimer
-          text="On mobile devices, please press and hold over the map markers to show hover-over content."
+          text="On mobile devices, please click the map markers to show hover-over content.  If content does not display, Ryan probably did not test with your specific mobile browser."
         />
         <div style={{ height: '60vh', maxWidth: '600px', margin: 'auto' }}>
           <GoogleMap

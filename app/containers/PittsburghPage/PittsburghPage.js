@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-// import GoogleMap from 'google-map-react';
+import GoogleMap from 'google-map-react';
 import MapMarker from '../../components/MapMarker';
 import MobileDisclaimer from '../../components/MobileDisclaimer'
 import { generateHash, isMobileDevice } from '../../utils/helpers';
@@ -39,10 +39,10 @@ export default class PittsburghPage extends React.PureComponent { // eslint-disa
           Get the most out of your Pittsburgh trip by hearing what Cyndaquil Says!<br /><br />
         </Typography>
         <MobileDisclaimer
-          text="On mobile devices, please click on the map markers to show hover-over content."
+          text="On mobile devices, please click on the map markers to show hover-over content.  If content does not display, Ryan probably did not test with your specific mobile browser."
         />
         <div style={{ height: isMobileDevice() ? '70vh' : '125vh', paddingLeft: '5%', paddingRight: '5%' }}>
-          {/* <GoogleMap
+          <GoogleMap
             bootstrapURLKeys={{ key: G_MAPS_API_KEY }}
             defaultCenter={PittsburghPage.defaultMapProps.center}
             defaultZoom={PittsburghPage.defaultMapProps.zoom}
@@ -50,7 +50,7 @@ export default class PittsburghPage extends React.PureComponent { // eslint-disa
             {
               PGH_LOCATIONS.map((pghItem) => (<MapMarker key={generateHash(10)} {...pghItem} />))
             }
-          </GoogleMap> */}
+          </GoogleMap>
         </div>
         <div className="stretch-container-16">
           <img src={PittsburghBanner} alt="CMU & Pitt banner" className="footer-image" />
