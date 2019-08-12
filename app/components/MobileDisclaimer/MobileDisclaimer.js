@@ -14,7 +14,7 @@ function MobileDisclaimer(props) {
 }
 
 MobileDisclaimer.propTypes = {
-  text: PropTypes.element,
+  text: PropTypes.string,
 };
 
 export default MobileDisclaimer;

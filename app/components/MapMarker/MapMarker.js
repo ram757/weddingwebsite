@@ -15,8 +15,8 @@ function MapMarker(props) {
         interactive
         disableFocusListener
         disableTouchListener
-        leaveTouchDelay={10000}
-        enterTouchDelay={300}
+        leaveTouchDelay={7000}
+        enterTouchDelay={50}
         title={(
           <React.Fragment>
             { hoverComponent }
