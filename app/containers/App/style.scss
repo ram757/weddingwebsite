@@ -5,6 +5,7 @@
 
 .app-body-wrapper {
   //max-width: calc(768px + 16px * 2);
+  min-height: 1px; //because internet explorer is DUMB AF
   padding: 0 16px;
 }
 

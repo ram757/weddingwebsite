@@ -35,6 +35,17 @@
     text-align: center;
   }
 
+  .card-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    // I wanted to use space-evenly but IE of course fails to support it...
+    // So we'll go with space-around and use a bit of padding.
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   hr:nth-of-type(1) {
     max-width: 1500px;
     margin-bottom: 2em;

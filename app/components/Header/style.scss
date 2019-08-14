@@ -1,4 +1,6 @@
 .header {
+  min-height: 1px; //because internet explorer is dumb AF
+  
   img {
     width: 100% !important;
     margin: 0 auto;

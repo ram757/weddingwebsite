@@ -55,7 +55,7 @@ export default function RegistryPage() {
       <Typography variant="h2">
         We are registered at
       </Typography>
-      <div style={{ display: 'inline-flex', justifyContent: 'space-evenly', width: '100%', flexWrap: 'wrap' }}>
+      <div className="card-container">
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
