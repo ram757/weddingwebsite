@@ -6,12 +6,15 @@
 import React from 'react';
 import ToolTip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
+import Place from '@material-ui/icons/Place';
+import Star from '@material-ui/icons/Star';
 // import GoogleMap from 'google-map-react';
 import MapMarker from '../../components/MapMarker/MapMarker';
 import { generateHash } from '../../utils/helpers';
 import { G_MAPS_API_KEY, PGH_LOCATIONS } from '../../hidden/hidden';
 import SomebodySays from '../../components/SomebodySays';
 import MapMarkerSays from '../../components/MapMarkerSays/MapMarkerSays';
+import MarriedIcon from '../../components/Icons/MarriedIcon';
 import { AVATAR } from '../../components/SomebodySays/constants';
 import './style.scss';
 
@@ -138,6 +141,9 @@ export default class BogusPage extends React.Component {
                 markerLocation="1 Schenley Drive, Pittsburgh, PA 15213"
                 buttonContent="Phipps Conservatory and Botanical Gardens"
               />
+              <Place style={{ color: 'red', transform: 'translate(-50%, -50%' }} /> 
+              <Star style={{ color: 'yellow', transform: 'translate(-50%, -50%' }} /> 
+              <MarriedIcon />
               {/*<GoogleMap*/}
                 {/*bootstrapURLKeys={{ key: G_MAPS_API_KEY }}*/}
                 {/*defaultCenter={BogusPage.defaultProps.center}*/}
