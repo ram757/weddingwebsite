@@ -23,6 +23,10 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
 
   getInitialRoute = (path) => {
     const foundRoute = Object.values(ROUTE_MAP).find((route) => route === path);
+    if (foundRoute && (foundRoute === ROUTE_MAP.RSVP || foundRoute === ROUTE_MAP.WEDDING_PARTY)) {
+      //TODO: Temporarily disallow state to these tabs
+      return ROUTE_MAP.HOME;
+    }
     return foundRoute || ROUTE_MAP.HOME;
   };
 
