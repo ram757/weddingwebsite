@@ -67,6 +67,12 @@ export default function FAQPage() {
           </p>
         </li>
         <li>
+          <p className="title">Can I bring my dog since it is outside?</p>
+          <p>
+            No.  Phipps does not allow dogs in the gardens.
+          </p>
+        </li>
+        <li>
           <p className="title">Can Brandon McDonald wear basketball shorts?</p>
           <p>
             Hell no.  He is required to wear a tuxedo.

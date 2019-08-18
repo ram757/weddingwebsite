@@ -121,6 +121,14 @@ export default class AccommodationsPage extends React.PureComponent {
         <br />
         <AddressCard
           className="center-card"
+          titleText="Wyndham Pittsburgh University Center"
+          bodyText={(<div className="address-body-text">100 Lytton Ave,<br />Pittsburgh, PA 15213<br />(412) 682-6200</div>)}
+          buttonText="More Info"
+          buttonLink="http://www.wyndhampittsburghuniversitycenter.com/"
+        />
+        <br />
+        <AddressCard
+          className="center-card"
           titleText="Hotel Indigo Pittsburgh - Technology Center"
           bodyText={(<div className="address-body-text">329 Technology Dr,<br />Pittsburgh, PA 15219<br />(412) 621-0880</div>)}
           buttonText="More Info"
@@ -148,6 +156,18 @@ export default class AccommodationsPage extends React.PureComponent {
               AccommodationsPage.renderHotelPins()
             }
           </GoogleMap>
+        </div>
+        <br />
+        <div className="center-card">
+          For more hotel options and/or price comparisons please consult
+          <br />
+          <a
+            style={{ fontSize: '26px' }}
+            href="https://www.google.com/travel/hotels/Pennsylvania?g2lb=4208993%2C4253230%2C4253565%2C4254308%2C4258168%2C4260007%2C4270442%2C4274032%2C4276661%2C4282187%2C4282357%2C4285990%2C4287183%2C4287732%2C4288707%2C4291318%2C4292004%2C4292345%2C4292608%2C4296056%2C4265427%2C4270859%2C4272931%2C4291516&hl=en&gl=us&un=1&q=hotels%20in%20oakland%20pa&rp=EN_534bu4Pq4vAEQ46i6l-rKn6QQELLum6r5zcuSUxDyk9jswef7tT84AUAASAI&ictx=1&ved=2ahUKEwiG2szs2ozkAhWsrFkKHePzBbsQtccEegQIChBM&hrf=CgUIrwEQACIDVVNEKhYKBwjkDxAGGBMSBwjkDxAGGBUYAiABsAEAWAFoAYoBKAoSCRjO16jSMURAETxo4xhWAFTAEhIJ680_abc-REARPGjjaJT5U8CaAQwSClBpdHRzYnVyZ2iiARYKCC9tLzA2OHAyEgpQaXR0c2J1cmdoqgEKCgIIIRICCAgYAaoBCgoCCBQSAghSGAGqARoKAggcEgIIURICCFgSAghzEgIIRxICCE0YAaoBCgoCCCUSAgh4GAGqARIKAggREgIIOBICCFcSAgh_GAGqATAKAgguEgMIgAESAgg7EgIIVhICCDoSAgg9EgMIgwESAghLEgIIDBICCFMSAggnGAGSAQIgAeoBDQgAEgkvbS8wMzY3M2vqAQ0IABIJL20vMDdyMXJo6gENCAASCS9tLzA4Z21jZ-oBDQgAEgkvbS8wOGdxdHbqAREIABINL2cvMTFiYzVfOXJzcOoBDQgAEgkvbS8wOGQzNmw&tcfs=EjAKCC9tLzA2OHAyEgpQaXR0c2J1cmdoGhgKCjIwMjAtMDYtMTkSCjIwMjAtMDYtMjEiGAoKMjAyMC0wNi0xORIKMjAyMC0wNi0yMVIA&ap=KigKEgkYzteo0jFEQBE8aOMYVgBUwBISCevNP2m3PkRAETxo42iU-VPAMAJa8wIKBQivARAAIgNVU0QqFgoHCOQPEAYYExIHCOQPEAYYFRgCIAGwAQBYAWgBigEoChIJSXVN3SAyREARPGjjiOUAVMASEgmEo7t_BT9EQBE8aOPYI_pTwJoBDBIKUGl0dHNidXJnaKIBFgoIL20vMDY4cDISClBpdHRzYnVyZ2iqAQoKAgghEgIICBgBqgEKCgIIFBICCFIYAaoBGgoCCBwSAghREgIIWBICCHMSAghHEgIITRgBqgEKCgIIJRICCHgYAaoBEgoCCBESAgg4EgIIVxICCH8YAaoBMAoCCC4SAwiAARICCDsSAghWEgIIOhICCD0SAwiDARICCEsSAggMEgIIUxICCCcYAZIBAiAB6gENCAASCS9tLzAzNjcza-oBDQgAEgkvbS8wN3IxcmjqAQ0IABIJL20vMDhnbWNn6gENCAASCS9tLzA4Z3F0duoBEQgAEg0vZy8xMWJjNV85cnNw6gENCAASCS9tLzA4ZDM2bA"
+            target="_blank"
+            rel="noopener noreferrer">
+             The Googles
+          </a>
         </div>
         <div className="stretch-container-16">
           <img src={OliveSleeping} alt="Olive sleeping" className="footer-image"/>

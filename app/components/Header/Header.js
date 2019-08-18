@@ -5,6 +5,8 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import ToolTip from '@material-ui/core/Tooltip';
+import Typography from '@material-ui/core/Typography';
+import SomebodySays from '../SomebodySays';
 import { ROUTE_MAP } from '../../containers/App/constants';
 import Banner from './images/pup_banner.jpg';
 import './style.scss';
@@ -69,7 +71,15 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
                   enterTouchDelay={50}
                   title={(
                     <React.Fragment>
-                      <div>Coming soon...</div>
+                      <SomebodySays
+                        avatar="Edgar"
+                        headerText="Coming soon..."
+                        collapsedComponent={(
+                          <Typography variant="body2" color="textSecondary" component="div" style={{ textAlign: 'center' }}>
+                            It's too early to RSVP anyway
+                          </Typography>
+                        )}
+                      />
                     </React.Fragment>
                   )}
                 >
@@ -96,7 +106,15 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
                   enterTouchDelay={50}
                   title={(
                     <React.Fragment>
-                      <div>Coming soon...</div>
+                      <SomebodySays
+                        avatar="Cyndaquil"
+                        headerText="Coming soon..."
+                        collapsedComponent={(
+                          <Typography variant="body2" color="textSecondary" component="div" style={{ textAlign: 'center' }}>
+                            Currently gathering intel...
+                          </Typography>
+                        )}
+                      />
                     </React.Fragment>
                   )}
                 >

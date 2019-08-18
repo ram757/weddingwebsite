@@ -142,7 +142,7 @@ export default class BogusPage extends React.Component {
                 buttonContent="Phipps Conservatory and Botanical Gardens"
               />
               <Place style={{ color: 'red', transform: 'translate(-50%, -50%' }} /> 
-              <Star style={{ color: 'yellow', transform: 'translate(-50%, -50%' }} /> 
+              <Star style={{ color: 'red', transform: 'translate(-50%, -50%' }} /> 
               <MarriedIcon />
               {/*<GoogleMap*/}
                 {/*bootstrapURLKeys={{ key: G_MAPS_API_KEY }}*/}

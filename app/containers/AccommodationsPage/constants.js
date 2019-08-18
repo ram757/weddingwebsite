@@ -1,8 +1,26 @@
 import React from 'react';
+import Star from '@material-ui/icons/Star'
 import MapMarkerSays from '../../components/MapMarkerSays';
 import { AVATAR } from '../../components/SomebodySays/constants';
 
 export const HOTEL_LOCATIONS = [
+  {
+    lat: 40.439220,
+    lng: -79.947344,
+    hoverComponent: (
+      <MapMarkerSays
+        whoSays={AVATAR.EDGAR}
+        headerText={(
+          <div>
+            This is where the wedding is at!!!
+          </div>
+        )}
+        markerLocation="1 Schenley Drive, Pittsburgh, PA 15213"
+        buttonContent="Phipps Conservatory and Botanical Gardens"
+      />
+    ),
+    markerImage: (<Star style={{ color: 'red', transform: 'translate(-50%, -50%', height: '30px', width: '30px' }} />)
+  },
   {
     lat: 40.440593,
     lng: -79.996588,
@@ -48,6 +66,22 @@ export const HOTEL_LOCATIONS = [
           </div>
         )}
         markerLocation="3341 Forbes Ave, Pittsburgh, PA 15213"
+        buttonContent="Open in Google Maps"
+      />
+    )
+  },
+  {
+    lat: 40.446134,
+    lng: -79.954440,
+    hoverComponent: (
+      <MapMarkerSays
+        whoSays={AVATAR.EDGAR}
+        headerText={(
+          <div>
+            Wyndham Pittsburgh University Center
+          </div>
+        )}
+        markerLocation="100 Lytton Ave, Pittsburgh, PA 15213"
         buttonContent="Open in Google Maps"
       />
     )
