@@ -4,6 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import ToolTip from '@material-ui/core/Tooltip';
 import { ROUTE_MAP } from '../../containers/App/constants';
 import Banner from './images/pup_banner.jpg';
 import './style.scss';
@@ -26,6 +27,11 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
   };
 
   handleChangeTab = (event, newValue) => {
+    if (newValue && (newValue === ROUTE_MAP.RSVP || newValue === ROUTE_MAP.WEDDING_PARTY)) {
+      //TODO: Temporarily disallow state to these tabs.
+      return;
+    }
+
     this.setState({
       tab: newValue
     });
@@ -47,8 +53,60 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
             onChange={this.handleChangeTab}
           >
             <Tab label="Home" value={ROUTE_MAP.HOME} component={Link} to={ROUTE_MAP.HOME} className="nav-bar-item" />
-            <Tab label="RSVP" value={ROUTE_MAP.RSVP} component={Link} to={ROUTE_MAP.RSVP} disabled className="nav-bar-item" />
-            <Tab label="Wedding Party" value={ROUTE_MAP.WEDDING_PARTY} component={Link} to={ROUTE_MAP.WEDDING_PARTY} disabled className="nav-bar-item" />
+            <Tab
+              style={{ pointerEvents: 'auto' }}
+              label={
+                <ToolTip
+                  key="RSVP-tip"
+                  interactive
+                  // disableFocusListener
+                  // disableTouchListener
+                  leaveTouchDelay={10000}
+                  enterTouchDelay={50}
+                  title={(
+                    <React.Fragment>
+                      <div>Coming soon...</div>
+                    </React.Fragment>
+                  )}
+                >
+                  <div>
+                    RSVP
+                  </div>
+                </ToolTip>
+              }
+              value={ROUTE_MAP.RSVP}
+              // component={Link}
+              // to={ROUTE_MAP.RSVP}
+              disabled
+              className="nav-bar-item"
+            />
+            <Tab
+              style={{ pointerEvents: 'auto' }}
+              label={
+                <ToolTip
+                  key="WEDDINGPARTY-tip"
+                  interactive
+                  // disableFocusListener
+                  // disableTouchListener
+                  leaveTouchDelay={10000}
+                  enterTouchDelay={50}
+                  title={(
+                    <React.Fragment>
+                      <div>Coming soon...</div>
+                    </React.Fragment>
+                  )}
+                >
+                  <div>
+                    WEDDING PARTY
+                  </div>
+                </ToolTip>
+              }
+              value={ROUTE_MAP.WEDDING_PARTY}
+              // component={Link}
+              // to={ROUTE_MAP.WEDDING_PARTY}
+              disabled
+              className="nav-bar-item"
+            />
             <Tab label="Guest Accommodations" value={ROUTE_MAP.ACCOMMODATIONS} component={Link} to={ROUTE_MAP.ACCOMMODATIONS} className="nav-bar-item" />
             <Tab label="Pittsburgh" value={ROUTE_MAP.PITTSBURGH} component={Link} to={ROUTE_MAP.PITTSBURGH} className="nav-bar-item" />
             <Tab label="Registry" value={ROUTE_MAP.REGISTRY} component={Link} to={ROUTE_MAP.REGISTRY} className="nav-bar-item" />
