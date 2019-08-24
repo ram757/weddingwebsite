@@ -15,7 +15,7 @@ function PictureDescriptor(props) {
 
   const imageContainer = (
     <div className="image-container" style={imgContainerStyle}>
-      <img src={image} alt={imageAlt} className="image-prop" />
+      <img src={image} alt={imageAlt} className="image-prop" onMouseDown={() => {}}/>
     </div>
   );
 
