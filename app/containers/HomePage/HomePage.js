@@ -6,6 +6,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import PictureDescriptor from '../../components/PictureDescriptor/Loadable';
 import MobileDisclaimer from '../../components/MobileDisclaimer';
+import TitleTextCrunch from '../../components/TitleTextCrunch';
 import { HOME_PAGE_CONTENT } from '../../hidden/hidden';
 import { generateHash } from '../../utils/helpers';
 import OliveEdgarYard from './images/olive_edgar_yard.jpg';
@@ -58,16 +59,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
   render() {
     return (
       <div className="home-page">
-        <div className="text-title-crunch">
-          <span>A</span>
-          <span>B</span>
-          <span>O</span>
-          <span>U</span>
-          <span>T</span>
-          <span></span>
-          <span>U</span>
-          <span>S</span>
-        </div>
+        <TitleTextCrunch text="ABOUT US" />
         {
           this.renderPictureDescriptors()
         }

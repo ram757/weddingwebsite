@@ -10,8 +10,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-// import AddressCard from '../../components/AddressCard';
-// import PictureDescriptor from '../../components/PictureDescriptor/Loadable';
+import TitleTextCrunch from '../../components/TitleTextCrunch';
 import Salamander from './images/salamander.jpg';
 import CrateAndBarrel from './images/crate_and_barrel.jpg';
 import CampingPicture from '../../hidden/images/rm_bq_olive_camping.jpg';
@@ -35,16 +34,7 @@ export default function RegistryPage() {
 
   return (
     <div className="registry-page">
-      <div className="text-title-crunch">
-        <span>R</span>
-        <span>E</span>
-        <span>G</span>
-        <span>I</span>
-        <span>S</span>
-        <span>T</span>
-        <span>R</span>
-        <span>Y</span>
-      </div>
+      <TitleTextCrunch text="REGISTRY" />
       <Typography variant="h1">
         Your presence at Ryan and Brigitte&apos;s wedding will be the greatest gift of all!
       </Typography>

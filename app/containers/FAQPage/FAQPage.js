@@ -2,23 +2,14 @@
  * FAQPage
  */
 import React from 'react';
+import TitleTextCrunch from '../../components/TitleTextCrunch';
 import EdgarCreation from './images/the_creation_of_edgar.jpg';
 import './style.scss';
 
 export default function FAQPage() {
   return (
     <div className="faq-page">
-      <div className="text-title-crunch">
-        <span>Q</span>
-        <span>U</span>
-        <span>E</span>
-        <span>S</span>
-        <span>T</span>
-        <span>I</span>
-        <span>O</span>
-        <span>N</span>
-        <span>S</span>
-      </div>
+      <TitleTextCrunch text="QUESTIONS" />
       <ul>
         <li>
           <p className="title">Is the wedding outside?</p>

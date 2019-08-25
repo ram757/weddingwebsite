@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import GoogleMap from 'google-map-react';
 import MapMarker from '../../components/MapMarker';
 import MobileDisclaimer from '../../components/MobileDisclaimer';
+import TitleTextCrunch from '../../components/TitleTextCrunch';
 import { generateHash } from '../../utils/helpers';
 import { G_MAPS_API_KEY } from '../../hidden/hidden';
 import AddressCard from '../../components/AddressCard';
