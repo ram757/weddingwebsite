@@ -11,6 +11,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from '../HomePage/Loadable';
 import BogusPage from '../BogusPage/Loadable';
+import WeddingPartyPage from '../WeddingPartyPage/Loadable';
 import AccommodationsPage from '../AccommodationsPage/Loadable';
 import RegistryPage from '../RegistryPage/Loadable';
 import PittsburghPage from '../PittsburghPage/Loadable';
@@ -27,7 +28,7 @@ const App = () => (
       <Switch>
         <Route exact path={ROUTE_MAP.HOME} component={HomePage} />
         {/*<Route exact path={ROUTE_MAP.RSVP} component={BogusPage} />*/}
-        {/*<Route exact path={ROUTE_MAP.WEDDING_PARTY} component={BogusPage} />*/}
+        <Route exact path={ROUTE_MAP.WEDDING_PARTY} component={WeddingPartyPage} />
         <Route exact path={ROUTE_MAP.ACCOMMODATIONS} component={AccommodationsPage} />
         <Route exact path={ROUTE_MAP.PITTSBURGH} component={PittsburghPage} />
         <Route exact path={ROUTE_MAP.REGISTRY} component={RegistryPage} />

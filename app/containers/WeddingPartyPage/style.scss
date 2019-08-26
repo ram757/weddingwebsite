@@ -1,0 +1,55 @@
+.wedding-party-page {
+  //font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+  h1 {
+    font-size: 3em;
+    font-weight: normal;
+    //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    //font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: "Avenir", "Helvetica", "Arial", serif;
+  }
+
+  section {
+    //margin: 3em auto;
+    margin-bottom: 3em;
+    //margin: 0;
+
+    &:first-child {
+      margin: 0;
+      //margin-top: 0px;
+      //margin-bottom: 0px;
+    }
+
+    &.centered {
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .picture-body {
+    font-family: "Avenir", "Helvetica", "Arial", serif;
+    min-width: 200px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    font-size: 20px;
+  }
+
+  .webkit-test {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 20px 0 0px 0;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}

@@ -8,6 +8,7 @@ function PictureDescriptor(props) {
   const {
     image,
     imageAlt,
+    imageLabel,
     imagePosition,
     body,
     imgContainerStyle
@@ -16,6 +17,9 @@ function PictureDescriptor(props) {
   const imageContainer = (
     <div className="image-container" style={imgContainerStyle}>
       <img src={image} alt={imageAlt} className="image-prop" onMouseDown={() => {}}/>
+      {
+        imageLabel ? <div className="image-label">{imageLabel}</div> : null
+      }
     </div>
   );
 
@@ -79,6 +83,7 @@ PictureDescriptor.propTypes = {
   imagePosition: PropTypes.oneOf(Object.values(POSITION)),
   image: PropTypes.string,
   imageAlt: PropTypes.string,
+  imageLabel: PropTypes.string,
   body: PropTypes.element,
   imgContainerStyle: PropTypes.object,
 };

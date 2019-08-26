@@ -72,22 +72,7 @@ export default class AccommodationsPage extends React.PureComponent {
   render() {
     return (
       <div className="accommodations-page">
-        <div className="text-title-crunch">
-          <span>A</span>
-          <span>C</span>
-          <span>C</span>
-          <span>O</span>
-          <span>M</span>
-          <span>M</span>
-          <span>O</span>
-          <span>D</span>
-          <span>A</span>
-          <span>T</span>
-          <span>I</span>
-          <span>O</span>
-          <span>N</span>
-          <span>S</span>
-        </div>
+        <TitleTextCrunch text="ACCOMMODATIONS" />
         <Typography variant="h1">
           Rooms have been reserved at
         </Typography>
