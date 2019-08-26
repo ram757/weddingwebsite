@@ -16,16 +16,22 @@ export const Header = withRouter((props) => <HeaderComponent {...props} />);
 class HeaderComponent extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
-    const { location } = this.props;
+    const { location, history } = this.props;
     const route = this.getInitialRoute(location.pathname);
     this.state = {
       tab: route
     };
+
+    // TODO: do something more elegant
+    // Hack to handle tab highlight changes when browser history changes
+    history.listen((location, action) => {
+      this.handleChangeTab(null, this.getInitialRoute(location.pathname));
+    })
   }
 
   getInitialRoute = (path) => {
     const foundRoute = Object.values(ROUTE_MAP).find((route) => route === path);
-    if (foundRoute && (foundRoute === ROUTE_MAP.RSVP || foundRoute === ROUTE_MAP.WEDDING_PARTY)) {
+    if (foundRoute && foundRoute === ROUTE_MAP.RSVP) {
       //TODO: Temporarily disallow state to these tabs
       return ROUTE_MAP.HOME;
     }
@@ -33,7 +39,7 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
   };
 
   handleChangeTab = (event, newValue) => {
-    if (newValue && (newValue === ROUTE_MAP.RSVP || newValue === ROUTE_MAP.WEDDING_PARTY)) {
+    if (newValue && newValue === ROUTE_MAP.RSVP) {
       //TODO: Temporarily disallow state to these tabs.
       return;
     }
@@ -94,41 +100,7 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
               disabled
               className="nav-bar-item"
             />
-            <Tab
-              style={{ pointerEvents: 'auto' }}
-              label={
-                <ToolTip
-                  key="WEDDINGPARTY-tip"
-                  interactive
-                  // disableFocusListener
-                  // disableTouchListener
-                  leaveTouchDelay={10000}
-                  enterTouchDelay={50}
-                  title={(
-                    <React.Fragment>
-                      <SomebodySays
-                        avatar="Cyndaquil"
-                        headerText="Coming soon..."
-                        collapsedComponent={(
-                          <Typography variant="body2" color="textSecondary" component="div" style={{ textAlign: 'center' }}>
-                            Currently gathering intel...
-                          </Typography>
-                        )}
-                      />
-                    </React.Fragment>
-                  )}
-                >
-                  <div>
-                    WEDDING PARTY
-                  </div>
-                </ToolTip>
-              }
-              value={ROUTE_MAP.WEDDING_PARTY}
-              // component={Link}
-              // to={ROUTE_MAP.WEDDING_PARTY}
-              disabled
-              className="nav-bar-item"
-            />
+            <Tab label="Wedding Party" value={ROUTE_MAP.WEDDING_PARTY} component={Link} to={ROUTE_MAP.WEDDING_PARTY} className="nav-bar-item" />
             <Tab label="Guest Accommodations" value={ROUTE_MAP.ACCOMMODATIONS} component={Link} to={ROUTE_MAP.ACCOMMODATIONS} className="nav-bar-item" />
             <Tab label="Pittsburgh" value={ROUTE_MAP.PITTSBURGH} component={Link} to={ROUTE_MAP.PITTSBURGH} className="nav-bar-item" />
             <Tab label="Registry" value={ROUTE_MAP.REGISTRY} component={Link} to={ROUTE_MAP.REGISTRY} className="nav-bar-item" />
