@@ -35,6 +35,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
               imageAlt,
               imagePosition,
               imageLabel,
+              imgContainerClassName,
               text
             } = contentItem;
 
@@ -46,6 +47,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                   imageAlt={imageAlt}
                   imagePosition={imagePosition}
                   imageLabel={imageLabel}
+                  imgContainerClassName={imgContainerClassName}
                   body={(
                     <Typography variant="body1" component="div" className="picture-body">
                       {

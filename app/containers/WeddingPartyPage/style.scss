@@ -44,12 +44,20 @@
     font-size: 20px;
   }
 
-  .webkit-test {
-    text-transform: uppercase;
-    font-size: 48px;
-    margin: 20px 0 0px 0;
-    -webkit-text-stroke: 1px black;
-    color: white;
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  .desmond-zoom-box {
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      transition: all 0.5s;
+      display: block;
+      width: 100%;
+      height: auto;
+      transform: scale(1);
+    }
+
+    &:hover img {
+      transform: scale(8) translate(14%, 17%);
+    }
   }
 }
