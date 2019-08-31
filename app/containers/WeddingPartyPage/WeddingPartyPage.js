@@ -16,7 +16,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
 
   static renderTextBody(textArray) {
     return textArray.map((textItem) => (
-      <div key={`image-descriptor-${generateHash(10)}`}>{ textItem } <br /><br /></div>
+      <div key={`image-descriptor-${generateHash(10)}`}>{ textItem }{ typeof(textItem) === 'string' ? <React.Fragment><br /><br /></React.Fragment> : <br /> }</div>
     ));
   }
 

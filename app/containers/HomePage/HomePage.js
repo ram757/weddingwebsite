@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import PictureDescriptor from '../../components/PictureDescriptor/Loadable';
 import MobileDisclaimer from '../../components/MobileDisclaimer';
 import TitleTextCrunch from '../../components/TitleTextCrunch';
-import { HOME_PAGE_CONTENT } from '../../hidden/hidden';
+import { HOME_PAGE_CONTENT } from '../../hidden/homePageContent';
 import { generateHash } from '../../utils/helpers';
 import OliveEdgarYard from './images/olive_edgar_yard.jpg';
 import './style.scss';
