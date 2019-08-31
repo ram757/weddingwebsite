@@ -5,7 +5,8 @@ import MapMarker from '../../components/MapMarker';
 import TitleTextCrunch from '../../components/TitleTextCrunch';
 import MobileDisclaimer from '../../components/MobileDisclaimer'
 import { generateHash, isMobileDevice } from '../../utils/helpers';
-import { G_MAPS_API_KEY, PGH_LOCATIONS } from '../../hidden/hidden';
+import { G_MAPS_API_KEY } from '../../hidden/hidden';
+import { PGH_LOCATIONS } from '../../hidden/pittsburghPageContent';
 import PittsburghBanner from './images/pittsburgh_banner.jpg';
 import './style.scss';
 
