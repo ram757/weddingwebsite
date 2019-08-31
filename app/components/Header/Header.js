@@ -53,7 +53,9 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
     const { tab: tabRoute } = this.state;
     return (
       <div className="header">
-        <img src={Banner} alt="Olive camping" />
+        <Link to={"/home"}>
+          <img src={Banner} alt="Olive camping" />
+        </Link>
         <Paper square>
           <Tabs
             value={tabRoute}
