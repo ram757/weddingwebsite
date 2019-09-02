@@ -12,11 +12,11 @@ import { generateHash } from '../../utils/helpers';
 import OliveBeach from './images/olive_beach.jpg';
 import './style.scss';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class WeddingPartyPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   static renderTextBody(textArray) {
     return textArray.map((textItem) => (
-      <div key={`image-descriptor-${generateHash(10)}`}>{ textItem }{ typeof(textItem) === 'string' ? <React.Fragment><br /><br /></React.Fragment> : <br /> }</div>
+      <div key={`wpp-txt-${generateHash(10)}`}>{ textItem }{ typeof(textItem) === 'string' ? <React.Fragment><br /><br /></React.Fragment> : <br /> }</div>
     ));
   }
 
@@ -40,9 +40,9 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
             } = contentItem;
 
             return (
-              <React.Fragment>
+              <React.Fragment key={`wpp-fragment-${generateHash(10)}`}>
                 <PictureDescriptor
-                  key={`picture-descriptor-${generateHash(10)}`}
+                  key={`wpp-descriptor-${generateHash(10)}`}
                   image={image}
                   imageAlt={imageAlt}
                   imagePosition={imagePosition}
@@ -51,7 +51,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                   body={(
                     <Typography variant="body1" component="div" className="picture-body">
                       {
-                        HomePage.renderTextBody(text)
+                        WeddingPartyPage.renderTextBody(text)
                       }
                     </Typography>
                   )}
