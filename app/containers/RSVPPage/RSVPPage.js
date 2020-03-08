@@ -16,7 +16,7 @@ export default function RSVPPage() {
         Please send back your RSVP card by <b><em><u>May 10th, 2020</u></em></b>.
       </Typography>
       <Typography variant="h2">
-        Please contact us by phone call or text at <b><em>{ RSVP_CONTENT.phoneNumber }</em></b> if you have any questions 
+        Please contact us by phone or text at <b><em>{ RSVP_CONTENT.phoneNumber }</em></b> if you have any questions 
         or any changes of plans.
       </Typography>
       <div className="stretch-container-16">

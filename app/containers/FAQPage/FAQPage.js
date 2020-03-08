@@ -10,12 +10,28 @@ import { isMobileDevice } from '../../utils/helpers';
 import './style.scss';
 
 const webStyles = {
-  width: '80%',
-  marginLeft: '10%',
-  marginRight: '10%'
+  width: '70%',
+  marginLeft: '15%',
+  marginRight: '15%'
 }
 const mobileStyles = {
   width: '100%'
+}
+
+const renderPictureItem = (faqItem) => {
+  return faqItem.picture ? 
+    <p style={isMobileDevice() ? mobileStyles : webStyles}>
+      <img src={faqItem.picture} />
+    </p>
+  : null;
+}
+
+const renderLinkItem = (faqItem) => {
+  return faqItem.link ? 
+  <p style={{ textAlign: 'center' }}>
+    <a href={faqItem.link.url} target='_blank'>{ faqItem.link.text }</a>
+  </p>
+  : null;
 }
 
 export default function FAQPage() {
@@ -30,11 +46,10 @@ export default function FAQPage() {
                 <p className="title">{ faqItem.question }</p>
                 <p>{ faqItem.answer }</p>
                 {
-                  faqItem.picture ? 
-                  <p style={isMobileDevice() ? mobileStyles : webStyles}>
-                    <img src={faqItem.picture} />
-                  </p>
-                  : null
+                  renderPictureItem(faqItem)
+                }
+                {
+                  renderLinkItem(faqItem)
                 }
               </li>
             )

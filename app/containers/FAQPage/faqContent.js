@@ -1,9 +1,14 @@
+import React from 'react';
 import PhippsParkingMap from './images/parking_map_phipps.jpg';
 
 export const faqList = [
     {
         question: 'Where is the wedding?',
-        answer: 'Phipps Conservatory and Botanical Gardens.'
+        answer: 
+            <span>
+                <em>Phipps Conservatory and Botanical Gardens</em>.  To open a map of the conservatory,&nbsp;
+                <a href='https://www.phipps.conservatory.org/assets/documents/mapnew.pdf' target='_blank'>click here</a>.
+            </span>
     },
     {
         question: 'Is the wedding outside?',
@@ -47,9 +52,16 @@ export const faqList = [
     },
     {
         question: 'Where should I park at the venue?',
-        answer: 'There is parking available in front of Phipps on Schenley Drive as well as parking along sidewalks of neighboring streets. ' +
-            ' If you plan to drive, please appropriate enough time to find parking as the parking area in front of Phipps may fill up. ' +
-            ' See the picture below outlining nearby parking locations and where the wedding entrance is located.',
-        picture: PhippsParkingMap
+        answer: 
+            <span>
+                There is parking available in front of Phipps on Schenley Drive as well as parking along sidewalks of neighboring streets.&nbsp;
+                <em><u>If you plan to drive, please appropriate enough time to find parking as the parking area in front of Phipps may fill up.</u></em>&nbsp;
+                See the picture below outlining nearby parking locations and where the wedding entrance is located.
+            </span>,
+        picture: PhippsParkingMap,
+        link: {
+            text: 'Click for more information!',
+            url: 'https://www.phipps.conservatory.org/visit-and-explore/visit/directions-and-parking'
+        }
     },
 ]
