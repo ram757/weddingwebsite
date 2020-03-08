@@ -29,7 +29,7 @@ export const HOTEL_LOCATIONS = [
         whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            The Omni William Penn Hotel!  A hotel block has been reserved here.
+            The Omni William Penn Hotel!  A hotel block has been reserved here. <br />
             <a href="https://www.omnihotels.com/hotels/pittsburgh-william-penn/weddings/quirk-and-mcdonald-wedding-06192020" target="_blank" rel="noopener noreferrer"> Click here to book a room!</a> 
           </div>
         )}
@@ -47,7 +47,7 @@ export const HOTEL_LOCATIONS = [
         whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            Hilton Garden Inn Pittsburgh University Place!  A hotel block has been reserved here.
+            Hilton Garden Inn Pittsburgh University Place!  A hotel block has been reserved here. <br />
             <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/P/PITUCGI-QMW-20200619/index.jhtml?WT.mc_id=POG" target="_blank" rel="noopener noreferrer"> Click here to book a room!</a> 
           </div>
         )}
@@ -101,22 +101,6 @@ export const HOTEL_LOCATIONS = [
           </div>
         )}
         markerLocation="329 Technology Dr, Pittsburgh, PA 15219"
-        buttonContent="Open in Google Maps"
-      />
-    )
-  },
-  {
-    lat: 40.441362,
-    lng: -79.996222,
-    hoverComponent: (
-      <MapMarkerSays
-        whoSays={AVATAR.EDGAR}
-        headerText={(
-          <div>
-            Kimpton Hotel Monaco Pittsburgh
-          </div>
-        )}
-        markerLocation="620 William Penn Pl, Pittsburgh, PA 15219"
         buttonContent="Open in Google Maps"
       />
     )

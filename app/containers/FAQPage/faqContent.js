@@ -7,7 +7,8 @@ export const faqList = [
         answer: 
             <span>
                 <em>Phipps Conservatory and Botanical Gardens</em>.  To open a map of the conservatory,&nbsp;
-                <a href='https://www.phipps.conservatory.org/assets/documents/mapnew.pdf' target='_blank'>click here</a>.
+                <a href='https://www.phipps.conservatory.org/assets/documents/mapnew.pdf' target='_blank'>click here</a>.&nbsp;
+                Please refer to the map below for where the entrance to the wedding will be.
             </span>
     },
     {
@@ -43,12 +44,12 @@ export const faqList = [
         answer: 'If your children are on the invitation then you may bring them. There will not be any childcare services. You will be entirely responsible for their supervision to ensure they do not stick their hands in the wedding cake before it is cut. If you need any special accomodations like a high chair let us know!'
     },
     {
-        question: 'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat sea salt" restrictions?',
-        answer: 'Please write any dietary restrictions on your RSVP card.  Children\'s meals are available by request for guests under 12 years old.'
-    },
-    {
         question: 'Can I bring my dog?',
         answer: 'No.  Phipps does not allow dogs in the gardens.'
+    },
+    {
+        question: 'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat sea salt" restrictions?',
+        answer: 'Please write any dietary restrictions on your RSVP card.  Children\'s meals are available by request for guests under 12 years old.'
     },
     {
         question: 'Where should I park at the venue?',
@@ -60,7 +61,7 @@ export const faqList = [
             </span>,
         picture: PhippsParkingMap,
         link: {
-            text: 'Click for more information!',
+            text: 'Click for more information about parking!',
             url: 'https://www.phipps.conservatory.org/visit-and-explore/visit/directions-and-parking'
         }
     },

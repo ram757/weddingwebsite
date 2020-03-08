@@ -123,14 +123,6 @@ export default class AccommodationsPage extends React.PureComponent {
           buttonLink="http://indigo-technology-center.getpennsylvaniahotels.com/en/"
         />
         <br />
-        <AddressCard
-          className="center-card"
-          titleText="Kimpton Hotel Monaco Pittsburgh"
-          bodyText={(<div className="address-body-text">620 William Penn Pl,<br />Pittsburgh, PA 15219<br />(412) 471-1170</div>)}
-          buttonText="More Info"
-          buttonLink="https://www.monaco-pittsburgh.com/"
-        />
-        <br />
         <MobileDisclaimer
           text="On mobile devices, please click the map markers to show hover-over content.  If content does not display, Ryan probably did not test with your specific mobile browser."
         />
