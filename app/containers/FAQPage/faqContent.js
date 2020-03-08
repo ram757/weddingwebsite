@@ -1,3 +1,5 @@
+import PhippsParkingMap from './images/parking_map_phipps.jpg';
+
 export const faqList = [
     {
         question: 'Where is the wedding?',
@@ -17,23 +19,27 @@ export const faqList = [
     },
     {
         question: 'What is Cocktail attire?',
-        answer: 'Suits and ties for men.  Dresses or pant suits for women.  No jeans.  No shorts.  No T-shirts.  No sneakers. No Viking hats.'
+        answer: 'Suits and ties for men.  Dresses or pant suits for women.  No jeans.  No shorts.  No T-shirts.  No sneakers.  No Viking hats.'
     },
     {
         question: 'When will the official Wedding Invitations be sent?',
-        answer: 'Expect your invitation in February or March 2020.'
+        answer: 'Expect your invitation by April 2020.'
     },
     {
         question: 'When should I RSVP by?',
-        answer: 'Before the date listed on your Wedding Invitation (likely May 20th, 2020). Earlier responses are welcome!'
+        answer: 'Please send your RSVP card back by May 10th, 2020. Earlier responses are welcome!'
     },
     {
         question: 'Can I bring a guest?',
-        answer: 'IF your invitation says "GUEST" on it, then you may bring a guest.  If you would really like to bring a guest that was not invited, please speak with us.'
+        answer: 'If your invitation says "GUEST" on it, then you may bring a guest.  If you would really like to bring a guest that was not invited, please speak with us.'
     },
     {
         question: 'Can I bring my kid(s)?',
-        answer: 'IF your children are on the invitation then you may bring them. There will not be any childcare services. You will be entirely responsible for their supervision to ensure they do not stick their hands in the wedding cake before it is cut. If you need any special accomodations like a high chair let us know!'
+        answer: 'If your children are on the invitation then you may bring them. There will not be any childcare services. You will be entirely responsible for their supervision to ensure they do not stick their hands in the wedding cake before it is cut. If you need any special accomodations like a high chair let us know!'
+    },
+    {
+        question: 'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat sea salt" restrictions?',
+        answer: 'Please write any dietary restrictions on your RSVP card.  Children\'s meals are available by request for guests under 12 years old.'
     },
     {
         question: 'Can I bring my dog?',
@@ -41,10 +47,9 @@ export const faqList = [
     },
     {
         question: 'Where should I park at the venue?',
-        answer: 'There is parking available in front of Phipps on Schenley Drive.'
-    },
-    {
-        question: 'Can Brandon McDonald wear basketball shorts?',
-        answer: 'Hell no.  He is required to wear a tuxedo.'
+        answer: 'There is parking available in front of Phipps on Schenley Drive as well as parking along sidewalks of neighboring streets. ' +
+            ' If you plan to drive, please appropriate enough time to find parking as the parking area in front of Phipps may fill up. ' +
+            ' See the picture below outlining nearby parking locations and where the wedding entrance is located.',
+        picture: PhippsParkingMap
     },
 ]

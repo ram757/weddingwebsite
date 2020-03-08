@@ -5,13 +5,13 @@
  * This component is the skeleton around the actual pages, and should only
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
-
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from '../HomePage/Loadable';
 import BogusPage from '../BogusPage/Loadable';
 import WeddingPartyPage from '../WeddingPartyPage/Loadable';
+import RSVPPage from '../RSVPPage/Loadable';
 import AccommodationsPage from '../AccommodationsPage/Loadable';
 import RegistryPage from '../RegistryPage/Loadable';
 import PittsburghPage from '../PittsburghPage/Loadable';
@@ -27,7 +27,7 @@ const App = () => (
     <div className="app-body-wrapper">
       <Switch>
         <Route exact path={ROUTE_MAP.HOME} component={HomePage} />
-        {/*<Route exact path={ROUTE_MAP.RSVP} component={BogusPage} />*/}
+        <Route exact path={ROUTE_MAP.RSVP} component={RSVPPage} />
         <Route exact path={ROUTE_MAP.WEDDING_PARTY} component={WeddingPartyPage} />
         <Route exact path={ROUTE_MAP.ACCOMMODATIONS} component={AccommodationsPage} />
         <Route exact path={ROUTE_MAP.PITTSBURGH} component={PittsburghPage} />

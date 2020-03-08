@@ -19,7 +19,7 @@ export const HOTEL_LOCATIONS = [
         buttonContent="Phipps Conservatory and Botanical Gardens"
       />
     ),
-    markerImage: (<Star style={{ color: 'red', transform: 'translate(-50%, -50%', height: '30px', width: '30px' }} />)
+    markerImage: (<Star style={{ color: '#59810A', transform: 'translate(-50%, -50%', height: '40px', width: '40px' }} />)
   },
   {
     lat: 40.440593,
@@ -36,7 +36,8 @@ export const HOTEL_LOCATIONS = [
         markerLocation="530 William Penn Pl, Pittsburgh, PA 15219"
         buttonContent="Open in Google Maps"
       />
-    )
+    ),
+    markerImage: (<Star style={{ color: 'red', transform: 'translate(-50%, -50%', height: '30px', width: '30px' }} />)
   },
   {
     lat: 40.439439,
@@ -46,13 +47,15 @@ export const HOTEL_LOCATIONS = [
         whoSays={AVATAR.EDGAR}
         headerText={(
           <div>
-            Hilton Garden Inn Pittsburgh University Place!  A second hotel block will soon be reserved here.
+            Hilton Garden Inn Pittsburgh University Place!  A hotel block has been reserved here.
+            <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/P/PITUCGI-QMW-20200619/index.jhtml?WT.mc_id=POG" target="_blank" rel="noopener noreferrer"> Click here to book a room!</a> 
           </div>
         )}
         markerLocation="3454 Forbes Ave, Pittsburgh, PA 15213"
         buttonContent="Open in Google Maps"
       />
-    )
+    ),
+    markerImage: (<Star style={{ color: 'red', transform: 'translate(-50%, -50%', height: '30px', width: '30px' }} />)
   },
   {
     lat: 40.438142,

@@ -1,4 +1,4 @@
-.registry-page {
+.rsvp-page {
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -26,15 +26,6 @@
     display: block;
   }
 
-  .disclaimer-text {
-    font-family: "Avenir", "Helvetica", "Arial", serif;
-    display: inline-block;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    text-align: center;
-  }
-
   .stretch-container-16 {
     margin: -16px;
     margin-top: 100px;
@@ -42,21 +33,5 @@
 
   .center-item {
     text-align: center;
-  }
-
-  .card-container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    // I wanted to use space-evenly but IE of course fails to support it...
-    // So we'll go with space-around and use a bit of padding.
-    justify-content: space-around;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  hr:nth-of-type(1) {
-    max-width: 1500px;
-    margin-bottom: 2em;
   }
 }

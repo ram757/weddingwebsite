@@ -1,5 +1,5 @@
 /*
- * AccommodationsPage
+ * RegistryPage
  */
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
@@ -102,6 +102,10 @@ export default function RegistryPage() {
             </Button>
           </CardActions>
         </Card>
+      </div>
+      <div className="disclaimer-text">
+        NOTE: Because we live in Connecticut, we will not be able to bring any large gifts home with us after the wedding.  
+        We appreciate your consideration to send gifts to our home address if you do choose to purchase one.
       </div>
       <div className="stretch-container-16">
         <img src={CampingPicture} alt="Ryan, Brigitte and Olive camping" />

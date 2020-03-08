@@ -36,12 +36,13 @@ const SomebodySays = (props) => {
     headerText,
     headerTextAlt,
     collapsedComponent,
-    switchTo
+    switchTo,
+    startExpanded
   } = props;
 
   // Handle state for avatar and card body expansion
   const [whoSays, setWhoSays] = React.useState(avatar);
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(startExpanded !== undefined ? startExpanded : false);
 
   function handleExpandClick() {
     setExpanded(!expanded);

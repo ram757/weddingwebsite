@@ -37,7 +37,7 @@ export default class AccommodationsPage extends React.PureComponent {
         </div>
         <br />
         <div className="sub-text">
-          Please reference the Quirk/McDonald Wedding when reserving your room for a special rate.
+          Please reference the Quirk/McDonald Wedding when reserving your room for a special rate (when calling).
           Reserve your room by 05/19/2020. Transportation will be provided to and from the wedding for
           guests staying in this hotel.  <br /><br /> Please click 'Book Now' to make a reservation.
         </div>
@@ -57,7 +57,9 @@ export default class AccommodationsPage extends React.PureComponent {
         </div>
         <br />
         <div className="sub-text">
-          A hotel room block will be reserved at this hotel as well.  More details and direct link will be provided soon.
+          Please reference the Quirk/McDonald Wedding when reserving your room for a special rate (when calling).
+          Reserve your room by 05/19/2020. Transportation will be provided to and from the wedding for
+          guests staying in this hotel.  <br /><br /> Please click 'Book Now' to make a reservation.
         </div>
       </div>
     );
@@ -85,18 +87,18 @@ export default class AccommodationsPage extends React.PureComponent {
           buttonLink="https://www.omnihotels.com/hotels/pittsburgh-william-penn/weddings/quirk-and-mcdonald-wedding-06192020"
         />
         <br />
-        <Typography variant="h1">
-          Other nearby hotels
-        </Typography>
-        <hr className="header-hr-bar" />
         <AddressCard
           className="center-card"
           titleText="Hilton Garden Inn Pittsburgh University Place"
           bodyText={AccommodationsPage.renderSecondAccommodationInfo()}
-          buttonText="More Info"
-          buttonLink="https://hiltongardeninn3.hilton.com/en/hotels/pennsylvania/hilton-garden-inn-pittsburgh-university-place-PITUCGI/index.html"
+          buttonText="Book Now"
+          buttonLink="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/P/PITUCGI-QMW-20200619/index.jhtml?WT.mc_id=POG"
         />
         <br />
+        <Typography variant="h1">
+          Other nearby hotels
+        </Typography>
+        <hr className="header-hr-bar" />
         <AddressCard
           className="center-card"
           titleText="Residence Inn by Marriott Pittsburgh Oakland/University Place"

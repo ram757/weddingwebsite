@@ -38,6 +38,7 @@ function MapMarkerSays(props) {
             </Button>
           </div>
         )}
+        startExpanded={true}
       />
     </div>
   );
