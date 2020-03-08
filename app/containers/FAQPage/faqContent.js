@@ -36,6 +36,10 @@ export const faqList = [
         answer: 'Please send your RSVP card back by May 10th, 2020. Earlier responses are welcome!'
     },
     {
+        question: 'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat sea salt" food restrictions?',
+        answer: 'Please write any dietary restrictions on your RSVP card.  Children\'s meals are available by request for guests under 12 years old.'
+    },
+    {
         question: 'Can I bring a guest?',
         answer: 'If your invitation says "GUEST" on it, then you may bring a guest.  If you would really like to bring a guest that was not invited, please speak with us.'
     },
@@ -48,15 +52,11 @@ export const faqList = [
         answer: 'No.  Phipps does not allow dogs in the gardens.'
     },
     {
-        question: 'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat sea salt" restrictions?',
-        answer: 'Please write any dietary restrictions on your RSVP card.  Children\'s meals are available by request for guests under 12 years old.'
-    },
-    {
         question: 'Where should I park at the venue?',
         answer: 
             <span>
                 There is parking available in front of Phipps on Schenley Drive as well as parking along sidewalks of neighboring streets.&nbsp;
-                <em><u>If you plan to drive, please appropriate enough time to find parking as the parking area in front of Phipps may fill up.</u></em>&nbsp;
+                <em><u>If you plan to drive, please appropriate enough time to find parking since the designated parking area in front of Phipps may fill up</u></em>.&nbsp;
                 See the picture below outlining nearby parking locations and where the wedding entrance is located.
             </span>,
         picture: PhippsParkingMap,
