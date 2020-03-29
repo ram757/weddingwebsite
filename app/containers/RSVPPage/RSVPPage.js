@@ -13,11 +13,12 @@ export default function RSVPPage() {
     <div className="rsvp-page">
       <TitleTextCrunch text="RSVP" />
       <Typography variant="h1">
-        Please send back your RSVP card by <b><em><u>May 10th, 2020</u></em></b>.
+        Expect wedding invitations to be sent in March of 2021. <br />
+        {/* Please send back your RSVP card by <b><em><u>May 10th, 2021</u></em></b>. */}
       </Typography>
       <Typography variant="h2">
         Please contact us by phone or text at <b><em>{ RSVP_CONTENT.phoneNumber }</em></b> if you have any questions 
-        or any changes of plans.
+        or any change of plans.
       </Typography>
       <div className="stretch-container-16">
         <img src={BigRockPicture} alt="Ryan and Olive on a big rock" />

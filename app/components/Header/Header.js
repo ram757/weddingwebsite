@@ -4,6 +4,8 @@ import { Link, withRouter } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import NotificationImportantIcon from '@material-ui/icons/NotificationImportant';
+import Modal from '../Modal';
 import { ROUTE_MAP } from '../../containers/App/constants';
 import Banner from './images/pup_banner.jpg';
 import './style.scss';
@@ -24,6 +26,11 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
     history.listen((location, action) => {
       this.handleChangeTab(null, this.getInitialRoute(location.pathname));
     })
+
+    this.modalOnReady = {
+      openCallback: null,
+      closeCallback: null
+    }
   }
 
   getInitialRoute = (path) => {
@@ -44,6 +51,21 @@ class HeaderComponent extends React.Component { // eslint-disable-line react/pre
         <Link to={"/home"}>
           <img src={Banner} alt="Olive camping" />
         </Link>
+        <div className="marquee-wrapper" style={{ backgroundColor: 'yellow' }} onClick={() => {this.modalOnReady.openCallback()}} >
+          <div className="marquee" style={{ backgroundColor: 'yellow', fontSize: '32px', display: 'flex', alignItems: 'center'}} >
+            <NotificationImportantIcon style={{fontSize: '32px'}} />
+            <span style={{fontSize: '32px'}}>CLICK FOR COVID-19 UPDATE</span>
+            <NotificationImportantIcon style={{fontSize: '32px'}} />
+          </div>
+        </div>
+        <Modal 
+            title={"COVID-19 UPDATE"}
+            text={
+              "Love is infectious but so is COVID-19.  As a result, we have made the difficult decision to postpone our June 20th, 2020 wedding to June 20th, 2021.  " +
+              "Please contact us if you need assistance with travel arrangements.  Invitaitons to be sent in March 2021."
+            }
+            onReadyObj={this.modalOnReady}
+          />
         <Paper square>
           <Tabs
             value={tabRoute}

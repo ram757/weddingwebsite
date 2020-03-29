@@ -29,11 +29,11 @@ export const faqList = [
     },
     {
         question: 'When will the official Wedding Invitations be sent?',
-        answer: 'Expect your invitation by April 2020.'
+        answer: 'Expect your invitation by April 2021.'
     },
     {
         question: 'When should I RSVP by?',
-        answer: 'Please send your RSVP card back by May 10th, 2020. Earlier responses are welcome!'
+        answer: 'Please send your RSVP card back by May 10th, 2021. Earlier responses are welcome!'
     },
     {
         question: 'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat sea salt" food restrictions?',
