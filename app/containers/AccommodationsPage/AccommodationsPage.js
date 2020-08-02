@@ -19,10 +19,10 @@ export default class AccommodationsPage extends React.PureComponent {
 
   static defaultMapProps = {
     center: {
-      lat: 40.439010,
+      lat: 40.43901,
       lng: -79.979215,
     },
-    zoom: 13
+    zoom: 13,
   };
 
   static renderMainAccommodationInfo() {
@@ -37,9 +37,11 @@ export default class AccommodationsPage extends React.PureComponent {
         </div>
         <br />
         <div className="sub-text">
-          Please reference the Quirk/McDonald Wedding when reserving your room for a special rate (when calling).
-          Reserve your room by 05/19/2021. Transportation will be provided to and from the wedding for
-          guests staying in this hotel.  <br /><br /> Please click 'Book Now' to make a reservation.
+          Please reference the Quirk/McDonald Wedding when reserving your room
+          for a special rate (when calling). Reserve your room by 05/19/2021.
+          Transportation will be provided to and from the wedding for guests
+          staying in this hotel. <br />
+          <br /> Please click 'Book Now' to make a reservation.
         </div>
       </div>
     );
@@ -57,27 +59,27 @@ export default class AccommodationsPage extends React.PureComponent {
         </div>
         <br />
         <div className="sub-text">
-          Please reference the Quirk/McDonald Wedding when reserving your room for a special rate (when calling).
-          Reserve your room by 05/19/2021. Transportation will be provided to and from the wedding for
-          guests staying in this hotel.  <br /><br /> Please click 'Book Now' to make a reservation.
+          Please reference the Quirk/McDonald Wedding when reserving your room
+          for a special rate (when calling). Reserve your room by 05/19/2021.
+          Transportation will be provided to and from the wedding for guests
+          staying in this hotel. <br />
+          <br /> Please click 'Book Now' to make a reservation.
         </div>
       </div>
     );
   }
 
   static renderHotelPins() {
-    return (
-      HOTEL_LOCATIONS.map((hotelItem) => (<MapMarker key={generateHash(10)} {...hotelItem} />))
-    );
+    return HOTEL_LOCATIONS.map((hotelItem) => (
+      <MapMarker key={generateHash(10)} {...hotelItem} />
+    ));
   }
 
   render() {
     return (
       <div className="accommodations-page">
         <TitleTextCrunch text="ACCOMMODATIONS" />
-        <Typography variant="h1">
-          Rooms have been reserved at
-        </Typography>
+        <Typography variant="h1">Rooms have been reserved at</Typography>
         <hr className="header-hr-bar" />
         <AddressCard
           className="center-card"
@@ -95,14 +97,20 @@ export default class AccommodationsPage extends React.PureComponent {
           buttonLink="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/P/PITUCGI-QMW-20200619/index.jhtml?WT.mc_id=POG"
         />
         <br />
-        <Typography variant="h1">
-          Other nearby hotels
-        </Typography>
+        <Typography variant="h1">Other nearby hotels</Typography>
         <hr className="header-hr-bar" />
         <AddressCard
           className="center-card"
           titleText="Residence Inn by Marriott Pittsburgh Oakland/University Place"
-          bodyText={(<div className="address-body-text">3341 Forbes Ave,<br />Pittsburgh, PA 15213<br />(412) 621-5600</div>)}
+          bodyText={
+            <div className="address-body-text">
+              3341 Forbes Ave,
+              <br />
+              Pittsburgh, PA 15213
+              <br />
+              (412) 621-5600
+            </div>
+          }
           buttonText="More Info"
           buttonLink="https://www.marriott.com/hotels/travel/pitrd-residence-inn-pittsburgh-oakland-university-place/"
         />
@@ -110,7 +118,15 @@ export default class AccommodationsPage extends React.PureComponent {
         <AddressCard
           className="center-card"
           titleText="Wyndham Pittsburgh University Center"
-          bodyText={(<div className="address-body-text">100 Lytton Ave,<br />Pittsburgh, PA 15213<br />(412) 682-6200</div>)}
+          bodyText={
+            <div className="address-body-text">
+              100 Lytton Ave,
+              <br />
+              Pittsburgh, PA 15213
+              <br />
+              (412) 682-6200
+            </div>
+          }
           buttonText="More Info"
           buttonLink="http://www.wyndhampittsburghuniversitycenter.com/"
         />
@@ -118,23 +134,27 @@ export default class AccommodationsPage extends React.PureComponent {
         <AddressCard
           className="center-card"
           titleText="Hotel Indigo Pittsburgh - Technology Center"
-          bodyText={(<div className="address-body-text">329 Technology Dr,<br />Pittsburgh, PA 15219<br />(412) 621-0880</div>)}
+          bodyText={
+            <div className="address-body-text">
+              329 Technology Dr,
+              <br />
+              Pittsburgh, PA 15219
+              <br />
+              (412) 621-0880
+            </div>
+          }
           buttonText="More Info"
           buttonLink="http://indigo-technology-center.getpennsylvaniahotels.com/en/"
         />
         <br />
-        <MobileDisclaimer
-          text="On mobile devices, please click the map markers to show hover-over content.  If content does not display, Ryan probably did not test with your specific mobile browser."
-        />
+        <MobileDisclaimer text="On mobile devices, please click the map markers to show hover-over content.  If content does not display, Ryan probably did not test with your specific mobile browser." />
         <div style={{ height: '60vh', maxWidth: '600px', margin: 'auto' }}>
           <GoogleMap
             bootstrapURLKeys={{ key: G_MAPS_API_KEY }}
             defaultCenter={AccommodationsPage.defaultMapProps.center}
             defaultZoom={AccommodationsPage.defaultMapProps.zoom}
           >
-            {
-              AccommodationsPage.renderHotelPins()
-            }
+            {AccommodationsPage.renderHotelPins()}
           </GoogleMap>
         </div>
         <br />
@@ -145,12 +165,17 @@ export default class AccommodationsPage extends React.PureComponent {
             style={{ fontSize: '26px' }}
             href="https://www.google.com/travel/hotels/Pennsylvania?g2lb=4208993%2C4253230%2C4253565%2C4254308%2C4258168%2C4260007%2C4270442%2C4274032%2C4276661%2C4282187%2C4282357%2C4285990%2C4287183%2C4287732%2C4288707%2C4291318%2C4292004%2C4292345%2C4292608%2C4296056%2C4265427%2C4270859%2C4272931%2C4291516&hl=en&gl=us&un=1&q=hotels%20in%20oakland%20pa&rp=EN_534bu4Pq4vAEQ46i6l-rKn6QQELLum6r5zcuSUxDyk9jswef7tT84AUAASAI&ictx=1&ved=2ahUKEwiG2szs2ozkAhWsrFkKHePzBbsQtccEegQIChBM&hrf=CgUIrwEQACIDVVNEKhYKBwjkDxAGGBMSBwjkDxAGGBUYAiABsAEAWAFoAYoBKAoSCRjO16jSMURAETxo4xhWAFTAEhIJ680_abc-REARPGjjaJT5U8CaAQwSClBpdHRzYnVyZ2iiARYKCC9tLzA2OHAyEgpQaXR0c2J1cmdoqgEKCgIIIRICCAgYAaoBCgoCCBQSAghSGAGqARoKAggcEgIIURICCFgSAghzEgIIRxICCE0YAaoBCgoCCCUSAgh4GAGqARIKAggREgIIOBICCFcSAgh_GAGqATAKAgguEgMIgAESAgg7EgIIVhICCDoSAgg9EgMIgwESAghLEgIIDBICCFMSAggnGAGSAQIgAeoBDQgAEgkvbS8wMzY3M2vqAQ0IABIJL20vMDdyMXJo6gENCAASCS9tLzA4Z21jZ-oBDQgAEgkvbS8wOGdxdHbqAREIABINL2cvMTFiYzVfOXJzcOoBDQgAEgkvbS8wOGQzNmw&tcfs=EjAKCC9tLzA2OHAyEgpQaXR0c2J1cmdoGhgKCjIwMjAtMDYtMTkSCjIwMjAtMDYtMjEiGAoKMjAyMC0wNi0xORIKMjAyMC0wNi0yMVIA&ap=KigKEgkYzteo0jFEQBE8aOMYVgBUwBISCevNP2m3PkRAETxo42iU-VPAMAJa8wIKBQivARAAIgNVU0QqFgoHCOQPEAYYExIHCOQPEAYYFRgCIAGwAQBYAWgBigEoChIJSXVN3SAyREARPGjjiOUAVMASEgmEo7t_BT9EQBE8aOPYI_pTwJoBDBIKUGl0dHNidXJnaKIBFgoIL20vMDY4cDISClBpdHRzYnVyZ2iqAQoKAgghEgIICBgBqgEKCgIIFBICCFIYAaoBGgoCCBwSAghREgIIWBICCHMSAghHEgIITRgBqgEKCgIIJRICCHgYAaoBEgoCCBESAgg4EgIIVxICCH8YAaoBMAoCCC4SAwiAARICCDsSAghWEgIIOhICCD0SAwiDARICCEsSAggMEgIIUxICCCcYAZIBAiAB6gENCAASCS9tLzAzNjcza-oBDQgAEgkvbS8wN3IxcmjqAQ0IABIJL20vMDhnbWNn6gENCAASCS9tLzA4Z3F0duoBEQgAEg0vZy8xMWJjNV85cnNw6gENCAASCS9tLzA4ZDM2bA"
             target="_blank"
-            rel="noopener noreferrer">
-             The Googles
+            rel="noopener noreferrer"
+          >
+            The Googles
           </a>
         </div>
         <div className="stretch-container-16">
-          <img src={OliveSleeping} alt="Olive sleeping" className="footer-image"/>
+          <img
+            src={OliveSleeping}
+            alt="Olive sleeping"
+            className="footer-image"
+          />
         </div>
       </div>
     );

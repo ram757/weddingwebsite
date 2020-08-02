@@ -8,5 +8,5 @@ export const ROUTE_MAP = {
   REGISTRY: '/registry',
   FAQ: '/faq',
   EMPTY: '',
-  BOGUS: '/bogus'
+  BOGUS: '/bogus',
 };

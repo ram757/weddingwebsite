@@ -17,8 +17,11 @@ export default function RSVPPage() {
         {/* Please send back your RSVP card by <b><em><u>May 10th, 2021</u></em></b>. */}
       </Typography>
       <Typography variant="h2">
-        Please contact us by phone or text at <b><em>{ RSVP_CONTENT.phoneNumber }</em></b> if you have any questions 
-        or any change of plans.
+        Please contact us by phone or text at{' '}
+        <b>
+          <em>{RSVP_CONTENT.phoneNumber}</em>
+        </b>{' '}
+        if you have any questions or any change of plans.
       </Typography>
       <div className="stretch-container-16">
         <img src={BigRockPicture} alt="Ryan and Olive on a big rock" />

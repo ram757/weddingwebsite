@@ -8,7 +8,7 @@ const IssueIcon = ({ className }) => (
 );
 
 IssueIcon.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default IssueIcon;

@@ -10,7 +10,7 @@ function MapMarkerSays(props) {
     headerText,
     markerLocation,
     useCoordinates,
-    buttonContent
+    buttonContent,
   } = props;
 
   function getMarkerLocationLink(link, useCoord) {
@@ -26,10 +26,14 @@ function MapMarkerSays(props) {
       <SomebodySays
         avatar={whoSays || AVATAR.CYNDAQUIL}
         headerText={headerText}
-        collapsedComponent={(
+        collapsedComponent={
           <div style={{ width: '100%' }}>
             <Button
-              style={{ textTransform: 'unset', textDecoration: 'underline', width: '100%' }}
+              style={{
+                textTransform: 'unset',
+                textDecoration: 'underline',
+                width: '100%',
+              }}
               target="_blank"
               href={getMarkerLocationLink(markerLocation, useCoordinates)}
               rel="noopener noreferer"
@@ -37,7 +41,7 @@ function MapMarkerSays(props) {
               {buttonContent}
             </Button>
           </div>
-        )}
+        }
         startExpanded={true}
       />
     </div>

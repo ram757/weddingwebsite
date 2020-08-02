@@ -25,9 +25,9 @@ export default class BogusPage extends React.Component {
   static defaultProps = {
     center: {
       lng: -79.947344,
-      lat: 40.439220
+      lat: 40.43922,
     },
-    zoom: 15
+    zoom: 15,
   };
 
   // Since state and props are static,
@@ -43,24 +43,20 @@ export default class BogusPage extends React.Component {
         <ul>
           <li>
             <p className="title">Real content</p>
-            <p>
-              Fill our website with real content :)
-            </p>
+            <p>Fill our website with real content :)</p>
           </li>
           <li>
             <p className="title">Send save-the-dates</p>
-            <p>
-              They&apos;ll be coming...
-            </p>
+            <p>They&apos;ll be coming...</p>
           </li>
           <li>
             <p className="title">Keep doing wedding stuff</p>
-            <p>
-              Why are weddings so much damn work?
-            </p>
+            <p>Why are weddings so much damn work?</p>
           </li>
           <li>
-            <p className="title"><i>and much more...</i></p>
+            <p className="title">
+              <i>and much more...</i>
+            </p>
           </li>
           <li>
             <SomebodySays
@@ -80,7 +76,7 @@ export default class BogusPage extends React.Component {
           <li>
             <ToolTip
               interactive
-              title={(
+              title={
                 <React.Fragment>
                   <SomebodySays
                     avatar="Edgar"
@@ -89,7 +85,7 @@ export default class BogusPage extends React.Component {
                     headerTextAlt="cats cats cats"
                   />
                 </React.Fragment>
-              )}
+              }
             >
               <div style={{ width: '300px', margin: 0 }}>
                 <SomebodySays
@@ -107,51 +103,60 @@ export default class BogusPage extends React.Component {
               <div style={{ width: '250px', margin: '0' }}>
                 <SomebodySays
                   avatar="Cyndaquil"
-                  headerText={(
+                  headerText={
                     <div>
                       IT&apos;S GONNA BE BUMPIN!!!!
                       <br />
                       This is where the wedding is at!!!
                     </div>
-                  )}
-                  collapsedComponent={(
+                  }
+                  collapsedComponent={
                     <div>
                       <Button
-                        style={{ textTransform: 'unset', textDecoration: 'underline' }}
+                        style={{
+                          textTransform: 'unset',
+                          textDecoration: 'underline',
+                        }}
                         target="_blank"
-                        href={'https://maps.google.com/?q=1 Schenley Drive, Pittsburgh, PA 15213'}
+                        href={
+                          'https://maps.google.com/?q=1 Schenley Drive, Pittsburgh, PA 15213'
+                        }
                         rel="noopener noreferer"
                       >
                         Phipps Conservatory and Botanical Gardens
                       </Button>
                     </div>
-                  )}
+                  }
                 />
               </div>
               <br />
               <MapMarkerSays
                 whoSays={AVATAR.CYNDAQUIL}
-                headerText={(
+                headerText={
                   <div>
                     IT&apos;S GONNA BE BUMPIN!!!!
                     <br />
                     This is where the wedding is at!!!
                   </div>
-                )}
+                }
                 markerLocation="1 Schenley Drive, Pittsburgh, PA 15213"
                 buttonContent="Phipps Conservatory and Botanical Gardens"
               />
-              <Place style={{ color: 'red', transform: 'translate(-50%, -50%' }} /> 
-              <Star style={{ color: 'red', transform: 'translate(-50%, -50%' }} /> 
+              <Place
+                style={{ color: 'red', transform: 'translate(-50%, -50%' }}
+              />
+              <Star
+                style={{ color: 'red', transform: 'translate(-50%, -50%' }}
+              />
               <MarriedIcon />
               {/*<GoogleMap*/}
-                {/*bootstrapURLKeys={{ key: G_MAPS_API_KEY }}*/}
-                {/*defaultCenter={BogusPage.defaultProps.center}*/}
-                {/*defaultZoom={BogusPage.defaultProps.zoom}*/}
+              {/*bootstrapURLKeys={{ key: G_MAPS_API_KEY }}*/}
+              {/*defaultCenter={BogusPage.defaultProps.center}*/}
+              {/*defaultZoom={BogusPage.defaultProps.zoom}*/}
               {/*>*/}
-                {/*{*/}
-                  {/*PGH_LOCATIONS.map((pghItem) => (<MapMarker key={generateHash(10)} {...pghItem} />))*/}
-                {/*}*/}
+              {/*{*/}
+              {/*PGH_LOCATIONS.map((pghItem) => (<MapMarker key={generateHash(10)} {...pghItem} />))*/}
+              {/*}*/}
               {/*</GoogleMap>*/}
             </div>
           </li>

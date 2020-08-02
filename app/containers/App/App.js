@@ -28,8 +28,16 @@ const App = () => (
       <Switch>
         <Route exact path={ROUTE_MAP.HOME} component={HomePage} />
         <Route exact path={ROUTE_MAP.RSVP} component={RSVPPage} />
-        <Route exact path={ROUTE_MAP.WEDDING_PARTY} component={WeddingPartyPage} />
-        <Route exact path={ROUTE_MAP.ACCOMMODATIONS} component={AccommodationsPage} />
+        <Route
+          exact
+          path={ROUTE_MAP.WEDDING_PARTY}
+          component={WeddingPartyPage}
+        />
+        <Route
+          exact
+          path={ROUTE_MAP.ACCOMMODATIONS}
+          component={AccommodationsPage}
+        />
         <Route exact path={ROUTE_MAP.PITTSBURGH} component={PittsburghPage} />
         <Route exact path={ROUTE_MAP.REGISTRY} component={RegistryPage} />
         <Route exact path={ROUTE_MAP.BOGUS} component={BogusPage} />

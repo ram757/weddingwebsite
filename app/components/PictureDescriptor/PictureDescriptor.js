@@ -16,11 +16,19 @@ function PictureDescriptor(props) {
   } = props;
 
   const imageContainer = (
-    <div className={`image-container ${imgContainerClassName ? imgContainerClassName : ''}`} style={imgContainerStyle}>
-      <img src={image} alt={imageAlt} className="image-prop" onMouseDown={() => {}}/>
-      {
-        imageLabel ? <div className="image-label">{imageLabel}</div> : null
-      }
+    <div
+      className={`image-container ${
+        imgContainerClassName ? imgContainerClassName : ''
+      }`}
+      style={imgContainerStyle}
+    >
+      <img
+        src={image}
+        alt={imageAlt}
+        className="image-prop"
+        onMouseDown={() => {}}
+      />
+      {imageLabel ? <div className="image-label">{imageLabel}</div> : null}
     </div>
   );
 
@@ -64,18 +72,14 @@ function PictureDescriptor(props) {
       {
         'flex-wrap': imagePosition === POSITION.LEFT,
         'flex-wrap-reverse': imagePosition === POSITION.RIGHT,
-      }
+      },
     ]);
   };
 
   return (
     <div className={getClassNames()}>
-      {
-        getFirst()
-      }
-      {
-        getSecond()
-      }
+      {getFirst()}
+      {getSecond()}
     </div>
   );
 }

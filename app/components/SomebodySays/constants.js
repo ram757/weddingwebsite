@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const AVATAR = {
   CYNDAQUIL: 'Cyndaquil',
-  EDGAR: 'Edgar'
+  EDGAR: 'Edgar',
 };
 
 export const useStyles = makeStyles((theme) => ({
@@ -11,14 +11,14 @@ export const useStyles = makeStyles((theme) => ({
     minWidth: '200px',
   },
   cardHeader: {
-    paddingBottom: '0px'
+    paddingBottom: '0px',
   },
   cardTitle: {
     textAlign: 'center',
-    marginLeft: '-15px'
+    marginLeft: '-15px',
   },
   cardContent: {
-    padding: '8px'
+    padding: '8px',
   },
   media: {
     height: 0,

@@ -4,7 +4,7 @@ import './style.scss';
 
 const List = ({ component, items }) => {
   const ComponentToRender = component;
-  let content = (<div></div>);
+  let content = <div></div>;
 
   // If we have items, render them
   if (items) {
@@ -13,14 +13,12 @@ const List = ({ component, items }) => {
     ));
   } else {
     // Otherwise render a single component
-    content = (<ComponentToRender />);
+    content = <ComponentToRender />;
   }
 
   return (
     <div className="list-wrapper">
-      <ul>
-        {content}
-      </ul>
+      <ul>{content}</ul>
     </div>
   );
 };

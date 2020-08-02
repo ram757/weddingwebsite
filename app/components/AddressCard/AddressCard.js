@@ -12,14 +12,14 @@ const useStyles = makeStyles({
   cardHeader: {
     paddingBottom: '0px',
     fontSize: 26,
-    textAlign: 'center'
+    textAlign: 'center',
   },
   content: {
     textAlign: 'center',
     fontSize: 20,
   },
   actions: {
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
   },
   pos: {
     marginBottom: 12,
@@ -34,7 +34,7 @@ function AddressCard(props) {
     bodyText,
     buttonText,
     buttonLink,
-    buttonCallback
+    buttonCallback,
   } = props;
 
   return (
@@ -46,9 +46,7 @@ function AddressCard(props) {
       />
       <CardContent className={classes.content}>
         <Typography variant="body1" component="div" className={classes.content}>
-          {
-            bodyText
-          }
+          {bodyText}
         </Typography>
       </CardContent>
       <CardActions className={classes.actions}>
@@ -71,7 +69,7 @@ AddressCard.propTypes = {
   bodyText: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   buttonText: PropTypes.string,
   buttonLink: PropTypes.string,
-  buttonCallback: PropTypes.func
+  buttonCallback: PropTypes.func,
 };
 
 export default AddressCard;

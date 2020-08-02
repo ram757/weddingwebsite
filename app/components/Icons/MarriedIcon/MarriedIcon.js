@@ -7,12 +7,12 @@ import Married from './images/married_scaled.jpg';
  */
 const MarriedIcon = ({ styleProps }) => (
   <svg width="30pt" height="30pt" viewBox="0 0 30 30">
-   <image href={Married} style={styleProps}/>
+    <image href={Married} style={styleProps} />
   </svg>
 );
 
 MarriedIcon.propTypes = {
-  styleProps: PropTypes.object
+  styleProps: PropTypes.object,
 };
 
 export default MarriedIcon;

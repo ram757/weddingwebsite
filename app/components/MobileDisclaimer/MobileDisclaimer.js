@@ -6,11 +6,9 @@ import './style.scss';
 function MobileDisclaimer(props) {
   const { text } = props;
 
-  return isMobileDevice() ?
-  <div className="mobile-disclaimer">
-    { text }
-  </div> :
-  null
+  return isMobileDevice() ? (
+    <div className="mobile-disclaimer">{text}</div>
+  ) : null;
 }
 
 MobileDisclaimer.propTypes = {

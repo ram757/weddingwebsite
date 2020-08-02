@@ -26,7 +26,7 @@ export default function RegistryPage() {
       height: 140,
     },
     actions: {
-      justifyContent: 'center'
+      justifyContent: 'center',
     },
   });
 
@@ -36,15 +36,16 @@ export default function RegistryPage() {
     <div className="registry-page">
       <TitleTextCrunch text="REGISTRY" />
       <Typography variant="h1">
-        Your presence at Ryan and Brigitte&apos;s wedding will be the greatest gift of all!
+        Your presence at Ryan and Brigitte&apos;s wedding will be the greatest
+        gift of all!
       </Typography>
       <Typography variant="h2">
-        But if you are compelled by extreme generosity, we thank you in advance!<br /><br />
+        But if you are compelled by extreme generosity, we thank you in advance!
+        <br />
+        <br />
       </Typography>
       <hr className="header-hr-bar" />
-      <Typography variant="h2">
-        We are registered at
-      </Typography>
+      <Typography variant="h2">We are registered at</Typography>
       <div className="card-container">
         <Card className={classes.card}>
           <CardActionArea>
@@ -57,7 +58,12 @@ export default function RegistryPage() {
               <Typography gutterBottom variant="h5" component="h2">
                 Crate & Barrel
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p" className="center-item">
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+                className="center-item"
+              >
                 To gift miscellaneous worldy items
               </Typography>
             </CardContent>
@@ -85,7 +91,12 @@ export default function RegistryPage() {
               <Typography gutterBottom variant="h5" component="h2">
                 World Wildlife Foundation
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p" className="center-item">
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+                className="center-item"
+              >
                 To give back to the earth
               </Typography>
             </CardContent>
@@ -104,8 +115,10 @@ export default function RegistryPage() {
         </Card>
       </div>
       <div className="disclaimer-text">
-        NOTE: Because we live in Connecticut, we will not be able to bring any large gifts home with us after the wedding.  
-        We would appreciate your consideration to send gifts to our home address if you do choose to purchase one.
+        NOTE: Because we live in Connecticut, we will not be able to bring any
+        large gifts home with us after the wedding. We would appreciate your
+        consideration to send gifts to our home address if you do choose to
+        purchase one.
       </div>
       <div className="stretch-container-16">
         <img src={CampingPicture} alt="Ryan, Brigitte and Olive camping" />

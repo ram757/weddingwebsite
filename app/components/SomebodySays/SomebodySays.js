@@ -37,12 +37,14 @@ const SomebodySays = (props) => {
     headerTextAlt,
     collapsedComponent,
     switchTo,
-    startExpanded
+    startExpanded,
   } = props;
 
   // Handle state for avatar and card body expansion
   const [whoSays, setWhoSays] = React.useState(avatar);
-  const [expanded, setExpanded] = React.useState(startExpanded !== undefined ? startExpanded : false);
+  const [expanded, setExpanded] = React.useState(
+    startExpanded !== undefined ? startExpanded : false,
+  );
 
   function handleExpandClick() {
     setExpanded(!expanded);
@@ -104,28 +106,35 @@ const SomebodySays = (props) => {
       <CardHeader
         className={classes.cardHeader}
         avatar={
-          (
-            <Avatar
-              aria-label={`${whoSays} says`}
-              className={classes.avatar}
-              src={getSourceFile(whoSays)}
-            />
-          )
+          <Avatar
+            aria-label={`${whoSays} says`}
+            className={classes.avatar}
+            src={getSourceFile(whoSays)}
+          />
         }
-        action={
-          (
-            getCardAction()
-          )
+        action={getCardAction()}
+        title={
+          <div style={{ textAlign: 'center', marginLeft: '-15px' }}>
+            <b>
+              {whoSays}
+              <br />
+              says
+            </b>
+          </div>
         }
-        title={<div style={{ textAlign: 'center', marginLeft: '-15px' }}><b>{whoSays}<br />says</b></div>}
       />
       <CardContent style={{ padding: '8px' }}>
-        <Typography variant="body2" color="textSecondary" component="div" style={{ textAlign: 'center' }}>
-          { getHeaderText() }
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          component="div"
+          style={{ textAlign: 'center' }}
+        >
+          {getHeaderText()}
         </Typography>
       </CardContent>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        { collapsedComponent }
+        {collapsedComponent}
       </Collapse>
     </Card>
   );
@@ -135,8 +144,16 @@ SomebodySays.propTypes = {
   avatar: PropTypes.oneOf(Object.values(AVATAR)),
   switchTo: PropTypes.oneOf(Object.values(AVATAR)),
   collapsedComponent: PropTypes.object,
-  headerText: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.element]),
-  headerTextAlt: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.element]),
+  headerText: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.element,
+  ]),
+  headerTextAlt: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+    PropTypes.element,
+  ]),
 };
 
 export default SomebodySays;

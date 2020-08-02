@@ -9,7 +9,7 @@ const ListItem = ({ item }) => (
 );
 
 ListItem.propTypes = {
-  item: PropTypes.any
+  item: PropTypes.any,
 };
 
 export default ListItem;

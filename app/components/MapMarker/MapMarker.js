@@ -4,10 +4,7 @@ import Place from '@material-ui/icons/Place';
 import ToolTip from '@material-ui/core/Tooltip';
 
 function MapMarker(props) {
-  const {
-    markerImage,
-    hoverComponent
-  } = props;
+  const { markerImage, hoverComponent } = props;
 
   return (
     <div>
@@ -17,13 +14,17 @@ function MapMarker(props) {
         disableTouchListener
         leaveTouchDelay={7000}
         enterTouchDelay={50}
-        title={(
-          <React.Fragment>
-            { hoverComponent }
-          </React.Fragment>
-        )}
+        title={<React.Fragment>{hoverComponent}</React.Fragment>}
       >
-        { markerImage || <Place style={{ color: 'red', position: 'absolute', transform: 'translate(-50%, -50%' }} /> }
+        {markerImage || (
+          <Place
+            style={{
+              color: 'red',
+              position: 'absolute',
+              transform: 'translate(-50%, -50%',
+            }}
+          />
+        )}
       </ToolTip>
     </div>
   );
@@ -31,7 +32,7 @@ function MapMarker(props) {
 
 MapMarker.propTypes = {
   markerImage: PropTypes.element,
-  hoverComponent: PropTypes.element
+  hoverComponent: PropTypes.element,
 };
 
 export default MapMarker;
