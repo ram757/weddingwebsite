@@ -115,7 +115,7 @@ export default function RegistryPage() {
         </Card>
       </div>
       <div className="disclaimer-text">
-        NOTE: Because we live in Connecticut, we will not be able to bring any
+        NOTE: Because we live in New Jersey, we will not be able to bring any
         large gifts home with us after the wedding. We would appreciate your
         consideration to send gifts to our home address if you do choose to
         purchase one.

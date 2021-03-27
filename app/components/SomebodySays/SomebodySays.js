@@ -17,6 +17,7 @@ import AutoRenew from '@material-ui/icons/Autorenew';
 import { AVATAR, useStyles } from './constants';
 import Cyndaquil from './images/cyndaquil_says.jpg';
 import Edgar from './images/edgar_says.jpg';
+import Wallace from './images/wallace_says.jpg';
 
 /**
  * SomebodySays Component
@@ -56,6 +57,8 @@ const SomebodySays = (props) => {
         return Cyndaquil;
       case AVATAR.EDGAR:
         return Edgar;
+      case AVATAR.WALLACE:
+        return Wallace;
       default:
         return Cyndaquil;
     }

@@ -4,11 +4,11 @@ import './style.scss';
 const Footer = () => (
   <footer>
     <section>
-      Ryan{' '}
+      Ryan &nbsp;
       <span role="img" aria-label="heart-emoji">
         ❤️
       </span>
-      Brigitte
+      &nbsp; Brigitte
     </section>
   </footer>
 );

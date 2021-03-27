@@ -39,12 +39,12 @@ export const faqList = [
   },
   {
     question: 'When will the official Wedding Invitations be sent?',
-    answer: 'Expect your invitation by April 2021.',
+    answer: 'Expect your invitation by April 2022.',
   },
   {
     question: 'When should I RSVP by?',
     answer:
-      'Please send your RSVP card back by May 10th, 2021. Earlier responses are welcome!',
+      'Please send your RSVP card back by May 10th, 2022. Earlier responses are welcome!',
   },
   {
     question:

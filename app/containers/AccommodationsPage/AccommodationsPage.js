@@ -38,10 +38,11 @@ export default class AccommodationsPage extends React.PureComponent {
         <br />
         <div className="sub-text">
           Please reference the Quirk/McDonald Wedding when reserving your room
-          for a special rate (when calling). Reserve your room by 05/19/2021.
+          for a special rate (when calling). Reserve your room by 05/19/2022.
           Transportation will be provided to and from the wedding for guests
           staying in this hotel. <br />
           <br /> Please click 'Book Now' to make a reservation.
+          <br /> Note: Dates will be updated soon.
         </div>
       </div>
     );
@@ -60,10 +61,11 @@ export default class AccommodationsPage extends React.PureComponent {
         <br />
         <div className="sub-text">
           Please reference the Quirk/McDonald Wedding when reserving your room
-          for a special rate (when calling). Reserve your room by 05/19/2021.
+          for a special rate (when calling). Reserve your room by 05/19/2022.
           Transportation will be provided to and from the wedding for guests
           staying in this hotel. <br />
           <br /> Please click 'Book Now' to make a reservation.
+          <br /> Note: Dates will be updated soon.
         </div>
       </div>
     );

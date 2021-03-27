@@ -76,8 +76,8 @@ class HeaderComponent extends React.Component {
         <Modal
           title={'COVID-19 UPDATE'}
           text={
-            'Love is infectious but so is COVID-19.  As a result, we have made the difficult decision to postpone our June 20th, 2020 wedding to June 20th, 2021.  ' +
-            'Please contact us if you need assistance with travel arrangements.  Invitaitons to be sent in March 2021.'
+            'Love is infectious but so is COVID-19.  As a result, we have made the difficult decision to postpone (for the second time) our June 20th, 2021 wedding to June 12th, 2022.  ' +
+            'Please contact us if you need assistance with travel arrangements.  Invitaitons to be sent in March 2022.'
           }
           onReadyObj={this.modalOnReady}
         />
