@@ -65,8 +65,8 @@ export default function Modal(props) {
   };
 
   if (onReadyObj) {
-    onReadyObj.openCallback = handleClickOpen;
-    onReadyObj.closeCallback = handleClose;
+    onReadyObj.open = handleClickOpen;
+    onReadyObj.close = handleClose;
   }
 
   return (
