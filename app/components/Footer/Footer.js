@@ -8,8 +8,9 @@ const Footer = () => (
       <span role="img" aria-label="heart-emoji">
         ❤️
       </span>
-      &nbsp; Brigitte
+      &nbsp;Brigitte
     </section>
+    <section>June 12th, 2022</section>
   </footer>
 );
 

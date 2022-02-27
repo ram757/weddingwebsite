@@ -5,9 +5,9 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { ROUTE_MAP } from '../../containers/App/constants';
-import Banner from './images/pup_banner.jpg';
+import Banner from './images/pup_banner-2022.jpg';
 import './style.scss';
-import CovidBanner from './CovidBanner/CovidBanner';
+// import CovidBanner from './CovidBanner/CovidBanner';
 
 export const Header = withRouter((props) => <HeaderComponent {...props} />);
 

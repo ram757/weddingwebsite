@@ -36,7 +36,7 @@ const renderLinkItem = (faqItem) => {
   ) : null;
 };
 
-export default function FAQPage() {
+const FAQPage = () => {
   return (
     <div className="faq-page">
       <TitleTextCrunch text="QUESTIONS" />
@@ -57,4 +57,6 @@ export default function FAQPage() {
       </div>
     </div>
   );
-}
+};
+
+export default FAQPage;

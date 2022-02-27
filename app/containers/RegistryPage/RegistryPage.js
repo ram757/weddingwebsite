@@ -16,7 +16,7 @@ import CrateAndBarrel from './images/crate_and_barrel.jpg';
 import CampingPicture from '../../hidden/images/rm_bq_olive_camping.jpg';
 import './style.scss';
 
-export default function RegistryPage() {
+const RegistryPage = () => {
   const useStyles = makeStyles({
     card: {
       minWidth: 345,
@@ -125,4 +125,6 @@ export default function RegistryPage() {
       </div>
     </div>
   );
-}
+};
+
+export default RegistryPage;

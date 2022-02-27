@@ -30,12 +30,32 @@ export const faqList = [
   },
   {
     question: 'What is the attire?',
-    answer: 'Cocktail attire.',
-  },
-  {
-    question: 'What is Cocktail attire?',
-    answer:
-      'Suits and ties for men.  Dresses or pant suits for women.  No jeans.  No shorts.  No T-shirts.  No sneakers.  No Viking hats.',
+    answer: (
+      <div>
+        <u>
+          <em>Formal (Black Tie Optional)</em>
+        </u>
+        <br />
+        <ul>
+          <li>
+            Definition: Suits and ties or tuxedos for men. Floor length gowns,
+            cocktail dresses, or pant suits for women. No jeans. No shorts. No
+            t-shirts. No sneakers. No viking hats.
+          </li>
+          <li>
+            Are you like Ryan and think that black tie optional means that
+            wearing a tie is optional?{' '}
+            <a
+              href="https://www.yeahweddings.com/what-is-black-tie-optional/"
+              target="_blank"
+            >
+              You're wrong
+            </a>
+            .
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     question: 'When will the official Wedding Invitations be sent?',
@@ -48,19 +68,35 @@ export const faqList = [
   },
   {
     question:
-      'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat sea salt" food restrictions?',
+      'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat organic sea kelp" food restrictions?',
     answer:
       "Please write any dietary restrictions on your RSVP card.  Children's meals are available by request for guests under 12 years old.",
   },
   {
     question: 'Can I bring a guest?',
-    answer:
-      'If your invitation says "GUEST" on it, then you may bring a guest.  If you would really like to bring a guest that was not invited, please speak with us.',
+    answer: (
+      <span>
+        If your invitation says "GUEST" on it, then you may bring a guest.{' '}
+        <u>
+          <em>Please write their full name on the RSVP card.</em>
+        </u>{' '}
+        If you would really like to bring a guest that was not invited, please
+        speak with us.
+      </span>
+    ),
   },
   {
     question: 'Can I bring my kid(s)?',
-    answer:
-      'If your children are on the invitation then you may bring them. There will not be any childcare services. You will be entirely responsible for their supervision to ensure they do not stick their hands in the wedding cake before it is cut. If you need any special accomodations like a high chair let us know!',
+    answer: (
+      <span>
+        If your children are on the invitation then you may bring them. There
+        will not be any childcare services. You will be entirely responsible for
+        their supervision to ensure they do not stick their hands in the wedding
+        cake before it is cut.{' '}
+        <em>Please keep them off the dance floor during our first dance.</em> If
+        you need any special accomodations like a high chair let us know!
+      </span>
+    ),
   },
   {
     question: 'Can I bring my dog?',
@@ -85,8 +121,7 @@ export const faqList = [
     picture: PhippsParkingMap,
     link: {
       text: 'Click for more information about parking!',
-      url:
-        'https://www.phipps.conservatory.org/visit-and-explore/visit/directions-and-parking',
+      url: 'https://www.phipps.conservatory.org/visit-and-explore/visit/directions-and-parking',
     },
   },
 ];

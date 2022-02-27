@@ -8,7 +8,7 @@ import { RSVP_CONTENT } from '../../hidden/rsvpPageContent';
 import BigRockPicture from '../../hidden/images/ryan_olive_big_rock.jpg';
 import './style.scss';
 
-export default function RSVPPage() {
+const RSVPPage = () => {
   return (
     <div className="rsvp-page">
       <TitleTextCrunch text="RSVP" />
@@ -16,16 +16,23 @@ export default function RSVPPage() {
         Expect wedding invitations to be sent in March of 2022. <br />
         {/* Please send back your RSVP card by <b><em><u>May 10th, 2022</u></em></b>. */}
       </Typography>
-      <Typography variant="h2">
-        Please contact us by phone or text at{' '}
+      <Typography variant="h3">
+        Once received, please respond via the enclosed RSVP card and mail them
+        back in a timely manner.
+      </Typography>
+      <Typography variant="h3">
+        If you have any questions or change of plans please contact us by phone
+        or text at{' '}
         <b>
           <em>{RSVP_CONTENT.phoneNumber}</em>
-        </b>{' '}
-        if you have any questions or any change of plans.
+        </b>
+        .{' '}
       </Typography>
       <div className="stretch-container-16">
         <img src={BigRockPicture} alt="Ryan and Olive on a big rock" />
       </div>
     </div>
   );
-}
+};
+
+export default RSVPPage;
