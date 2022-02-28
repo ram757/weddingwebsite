@@ -27,6 +27,14 @@ const RSVPPage = () => {
         .
       </Typography>
       <Typography variant="h3">
+        On the RSVP card, please include the full name of everyone in your party
+        who is attending as well as the entrée choice for each person.
+        <br />
+        <br />
+        If you or any member of your party has any dietary restrictions you
+        would like us to know about please write them on the RSVP card.
+        <br />
+        <br />
         If you have any questions or change of plans please contact us by phone
         or text at{' '}
         <b>
