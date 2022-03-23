@@ -6,7 +6,8 @@ export const faqList = [
     question: 'Where is the wedding?',
     answer: (
       <span>
-        <em>Phipps Conservatory and Botanical Gardens</em>. To open a map of the
+        <em>Phipps Conservatory and Botanical Gardens</em>. The entire wedding
+        will take place in the Outdoor Gardens. To open a map of the
         conservatory,&nbsp;
         <a
           href="https://www.phipps.conservatory.org/assets/documents/mapnew.pdf"
@@ -49,7 +50,7 @@ export const faqList = [
               href="https://www.yeahweddings.com/what-is-black-tie-optional/"
               target="_blank"
             >
-              You're wrong
+              That is not the case (click to find out why).
             </a>
             .
           </li>
@@ -64,7 +65,7 @@ export const faqList = [
   {
     question: 'When should I RSVP by?',
     answer:
-      'Please send your RSVP card back by May 10th, 2022. Earlier responses are welcome!',
+      'Please send your RSVP card back by May 10th, 2022. Earlier responses are encouraged (even if you must respectfully decline, we still want to know)!',
   },
   {
     question:
@@ -101,6 +102,11 @@ export const faqList = [
   {
     question: 'Can I bring my dog?',
     answer: 'No.  Phipps does not allow dogs in the gardens.',
+  },
+  {
+    question: 'Can I take pictures during the wedding ceremony?',
+    answer:
+      'Silencing your cell phones and putting them away during the entire ceremony would be very much appreciated.  We have hired some amazing photogrophers to capture these special moments.  You are welcome to take pictures after the ceremony.',
   },
   {
     question: 'Where should I park at the venue?',

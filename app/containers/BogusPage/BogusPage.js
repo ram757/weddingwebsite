@@ -17,6 +17,7 @@ import MapMarkerSays from '../../components/MapMarkerSays/MapMarkerSays';
 import MarriedIcon from '../../components/Icons/MarriedIcon';
 import { AVATAR } from '../../components/SomebodySays/constants';
 import './style.scss';
+// import AddToCalendar from '../../components/AddToCalendar';
 
 const defaultProps = {
   center: {
@@ -146,6 +147,9 @@ const BogusPage = () => {
             {/*PGH_LOCATIONS.map((pghItem) => (<MapMarker key={generateHash(10)} {...pghItem} />))*/}
             {/*}*/}
             {/*</GoogleMap>*/}
+            <br />
+            {/* <AddToCalendar /> */}
+            <br />
           </div>
         </li>
       </ul>

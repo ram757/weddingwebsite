@@ -16,10 +16,24 @@ import CrateAndBarrel from './images/crate_and_barrel.jpg';
 import CampingPicture from '../../hidden/images/rm_bq_olive_camping.jpg';
 import './style.scss';
 
+const newTabHref = {
+  target: '_blank',
+  rel: 'noopener noreferer',
+};
+const crateAndBarrel = {
+  ...newTabHref,
+  href: 'https://www.crateandbarrel.com/gift-registry/brigitte-quirk-and-ryan-mcdonald/r6016155',
+};
+const worldWildlife = {
+  ...newTabHref,
+  href: 'http://wwf.worldwildlife.org/site/TR/SpecialOccasion/Panda-Nation?px=14887004&pg=personal&fr_id=1910',
+};
+
 const RegistryPage = () => {
   const useStyles = makeStyles({
     card: {
       minWidth: 345,
+      maxWidth: 345,
       margin: '15px',
     },
     media: {
@@ -48,7 +62,7 @@ const RegistryPage = () => {
       <Typography variant="h2">We are registered at</Typography>
       <div className="card-container">
         <Card className={classes.card}>
-          <CardActionArea>
+          <CardActionArea {...crateAndBarrel}>
             <CardMedia
               className={classes.media}
               image={CrateAndBarrel}
@@ -69,19 +83,13 @@ const RegistryPage = () => {
             </CardContent>
           </CardActionArea>
           <CardActions className={classes.actions}>
-            <Button
-              size="small"
-              color="primary"
-              target="_blank"
-              href="https://www.crateandbarrel.com/gift-registry/brigitte-quirk-and-ryan-mcdonald/r6016155"
-              rel="noopener noreferer"
-            >
+            <Button size="small" color="primary" {...crateAndBarrel}>
               Visit
             </Button>
           </CardActions>
         </Card>
         <Card className={classes.card}>
-          <CardActionArea>
+          <CardActionArea {...worldWildlife}>
             <CardMedia
               className={classes.media}
               image={Salamander}
@@ -89,7 +97,7 @@ const RegistryPage = () => {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                World Wildlife Foundation
+                Wildlife Foundation
               </Typography>
               <Typography
                 variant="body2"
@@ -102,13 +110,7 @@ const RegistryPage = () => {
             </CardContent>
           </CardActionArea>
           <CardActions className={classes.actions}>
-            <Button
-              size="small"
-              color="primary"
-              target="_blank"
-              href="http://wwf.worldwildlife.org/site/TR/SpecialOccasion/Panda-Nation?px=14887004&pg=personal&fr_id=1910"
-              rel="noopener noreferer"
-            >
+            <Button size="small" color="primary" {...worldWildlife}>
               Visit
             </Button>
           </CardActions>
