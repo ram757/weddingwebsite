@@ -6,5 +6,4 @@ const firstDate = new Date();
 const secondDate = new Date(2022, 6, 12);
 const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
 
-const DaysUntilWedding
-
+//TODO: Decide if I want to add a "days-until" count down...
