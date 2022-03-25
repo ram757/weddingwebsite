@@ -69,4 +69,8 @@
 .react-add-to-calendar__dropdown {
   width: 99% !important;
   z-index: 100;
+
+  ul {
+    padding-left: 0;
+  }
 }
