@@ -13,7 +13,7 @@ const RSVPPage = () => {
     <div className="rsvp-page">
       <TitleTextCrunch text="RSVP" />
       <Typography variant="h1">
-        Wedding invitations will be sent in March of 2022.
+        Wedding invitations were sent at the end of March of 2022.
         <br />
         <br />
         Once received, please respond via the enclosed RSVP card and send back

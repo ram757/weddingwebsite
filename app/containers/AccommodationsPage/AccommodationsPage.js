@@ -13,6 +13,7 @@ import AddressCard from '../../components/AddressCard';
 import { HOTEL_LOCATIONS } from './constants';
 import OliveSleeping from './images/olive_sleeping.jpg';
 import './style.scss';
+import { RSVP_CONTENT } from '../../hidden/rsvpPageContent';
 
 const defaultMapProps = {
   center: {
@@ -25,21 +26,31 @@ const defaultMapProps = {
 const renderMainAccommodationInfo = () => {
   return (
     <div className="address-body-text">
-      <div>
+      <section>
         530 William Penn Pl,
         <br />
         Pittsburgh, PA 15219
         <br />
         (412) 281-7100
-      </div>
+      </section>
       <br />
-      <div className="sub-text">
+      <section className="sub-text">
         Please reference the Quirk/McDonald Wedding when reserving your room for
-        a special rate (when calling). Reserve your room by May 10th, 2022.
+        a special rate (when calling). The discounted rate expires on{' '}
+        <b>
+          <u>May 10th, 2022</u>
+        </b>
+        , please reserve your room by then if you wish to stay here.
         Transportation will be provided to and from the wedding for guests
         staying in this hotel. <br />
+        <section>
+          <h4>After Party</h4>
+          <section>{RSVP_CONTENT.afterParty}</section>
+          <h4>Breakfast</h4>
+          <section>{RSVP_CONTENT.breakfast}</section>
+        </section>
         <br /> Please click 'Book Now' to make a reservation.
-      </div>
+      </section>
     </div>
   );
 };
@@ -57,7 +68,11 @@ const renderSecondAccommodationInfo = () => {
       <br />
       <div className="sub-text">
         Please reference the Quirk/McDonald Wedding when reserving your room for
-        a special rate (when calling). Reserve your room by May 10th, 2022.
+        a special rate (when calling). The discounted rate expires on{' '}
+        <b>
+          <u>May 20th, 2022</u>
+        </b>
+        , please reserve your room by then if you wish to stay here.
         Transportation will be provided to and from the wedding for guests
         staying in this hotel. <br />
         <br /> Please click 'Book Now' to make a reservation.

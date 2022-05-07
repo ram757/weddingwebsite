@@ -64,8 +64,16 @@ export const faqList = [
   },
   {
     question: 'When should I RSVP by?',
-    answer:
-      'Please send your RSVP card back by May 10th, 2022. Earlier responses are encouraged (even if you must respectfully decline, we still want to know)!',
+    answer: (
+      <div>
+        Please send your RSVP card back by{' '}
+        <b>
+          <u>May 10th, 2022</u>
+        </b>
+        . Earlier responses are encouraged (even if you must respectfully
+        decline, we still want to know)!
+      </div>
+    ),
   },
   {
     question:
