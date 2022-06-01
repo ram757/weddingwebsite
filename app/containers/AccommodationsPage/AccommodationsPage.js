@@ -39,11 +39,8 @@ const renderMainAccommodationInfo = () => {
       <br />
       <section className="sub-text">
         Please reference the Quirk/McDonald Wedding when reserving your room for
-        a special rate (when calling). The discounted rate expired on{' '}
-        <b>
-          <u>May 10th, 2022</u>
-        </b>
-        .
+        a special rate (when calling). The discounted rate expired on May 10th,
+        2022.
         <section>
           <h4>Transportation Timeline</h4>
           <ul className="timeline-item">
@@ -75,13 +72,10 @@ const renderSecondAccommodationInfo = () => {
       <br />
       <div className="sub-text">
         Please reference the Quirk/McDonald Wedding when reserving your room for
-        a special rate (when calling). The discounted rate expired on{' '}
-        <b>
-          <u>May 20th, 2022</u>
-        </b>
-        .
+        a special rate (when calling). The discounted rate expired on May 20th,
+        2022.
         <section>
-          <h4>Transportation Timeline</h4>
+          <h4>Wedding Day Transportation Timeline</h4>
           <ul className="timeline-item">
             <li>{RSVP_CONTENT.preWeddingPickup[1]}</li>
             <li>{RSVP_CONTENT.postWeddingPickup[0]}</li>
@@ -89,8 +83,6 @@ const renderSecondAccommodationInfo = () => {
           </ul>
           <h4>{afterPartyLabel}</h4>
           <section>{RSVP_CONTENT.afterParty}</section>
-          <h4>{breakfastLabel}</h4>
-          <section>{RSVP_CONTENT.breakfast}</section>
         </section>
         <br /> Please click 'Book Now' to make a reservation.
       </div>

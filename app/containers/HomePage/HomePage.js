@@ -13,14 +13,6 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-// import {
-//   Timeline,
-//   TimelineConnector,
-//   TimelineContent,
-//   TimelineDot,
-//   TimelineItem,
-//   TimelineSeparator,
-// } from '@material-ui/lab';
 import PictureDescriptor from '../../components/PictureDescriptor/Loadable';
 import MobileDisclaimer from '../../components/MobileDisclaimer';
 import TitleTextCrunch from '../../components/TitleTextCrunch';
@@ -116,7 +108,7 @@ const renderTimeLineCard = () => {
             <h3>Sunday, June 12th - Wedding Day!</h3>
             {renderTimeLineItem(HOME_PAGE_TIMELINE.shuttleBefore[0])}
             {renderTimeLineItem(HOME_PAGE_TIMELINE.shuttleBefore[1])}
-            {/* {renderTimeLineItem(HOME_PAGE_TIMELINE.wedding)} */}
+            {renderTimeLineItem(HOME_PAGE_TIMELINE.wedding)}
             {renderTimeLineItem(HOME_PAGE_TIMELINE.shuttleAfter[0])}
             {renderTimeLineItem(HOME_PAGE_TIMELINE.shuttleAfter[1])}
             {renderTimeLineItem(HOME_PAGE_TIMELINE.afterParty)}
