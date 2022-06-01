@@ -21,6 +21,17 @@ export const faqList = [
     ),
   },
   {
+    question:
+      'Will there be transportation to/from the hotels that we have reserved blocks at?',
+    answer: (
+      <div>
+        Yes, transportation will be provided via shuttle for folks staying at
+        the Omni and Hilton. Please refer to the{' '}
+        <a href="/accommodations">Accomodations Page</a> for timelines.
+      </div>
+    ),
+  },
+  {
     question: 'Is the wedding outside?',
     answer:
       'Yes.  Everything will be outside.  The reception area will be located under a tent.',
@@ -58,29 +69,29 @@ export const faqList = [
       </div>
     ),
   },
-  {
-    question: 'When will the official Wedding Invitations be sent?',
-    answer: 'Expect your invitation by April 2022.',
-  },
-  {
-    question: 'When should I RSVP by?',
-    answer: (
-      <div>
-        Please send your RSVP card back by{' '}
-        <b>
-          <u>May 10th, 2022</u>
-        </b>
-        . Earlier responses are encouraged (even if you must respectfully
-        decline, we still want to know)!
-      </div>
-    ),
-  },
-  {
-    question:
-      'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat organic sea kelp" food restrictions?',
-    answer:
-      "Please write any dietary restrictions on your RSVP card.  Children's meals are available by request for guests under 12 years old.",
-  },
+  // {
+  //   question: 'When will the official Wedding Invitations be sent?',
+  //   answer: 'Expect your invitation by April 2022.',
+  // },
+  // {
+  //   question: 'When should I RSVP by?',
+  //   answer: (
+  //     <div>
+  //       Please send your RSVP card back by{' '}
+  //       <b>
+  //         <u>May 10th, 2022</u>
+  //       </b>
+  //       . Earlier responses are encouraged (even if you must respectfully
+  //       decline, we still want to know)!
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   question:
+  //     'Can Phipps catering accommodate my gluten-free, vegan, lactose inolerant, "I only eat organic sea kelp" food restrictions?',
+  //   answer:
+  //     "Please write any dietary restrictions on your RSVP card.  Children's meals are available by request for guests under 12 years old.",
+  // },
   {
     question: 'Can I bring a guest?',
     answer: (
@@ -136,6 +147,7 @@ export const faqList = [
     link: {
       text: 'Click for more information about parking!',
       url: 'https://www.phipps.conservatory.org/visit-and-explore/visit/directions-and-parking',
+      id: 'phipps-parking-map',
     },
   },
 ];

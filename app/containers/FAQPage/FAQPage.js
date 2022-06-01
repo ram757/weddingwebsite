@@ -28,7 +28,7 @@ const renderPictureItem = (faqItem) => {
 
 const renderLinkItem = (faqItem) => {
   return faqItem.link ? (
-    <p style={{ textAlign: 'center' }}>
+    <p id={faqItem.id} style={{ textAlign: 'center' }}>
       <a href={faqItem.link.url} target="_blank">
         {faqItem.link.text}
       </a>
@@ -44,8 +44,8 @@ const FAQPage = () => {
         {faqList.map((faqItem) => {
           return (
             <li key={generateHash(10)}>
-              <p className="title">{faqItem.question}</p>
-              <p>{faqItem.answer}</p>
+              <div className="title">{faqItem.question}</div>
+              <div>{faqItem.answer}</div>
               {renderPictureItem(faqItem)}
               {renderLinkItem(faqItem)}
             </li>

@@ -23,6 +23,9 @@ const defaultMapProps = {
   zoom: 13,
 };
 
+const afterPartyLabel = 'Wedding After Party (10:30PM-??)';
+const breakfastLabel = 'Monday Breakfast (8:00-10:00AM)';
+
 const renderMainAccommodationInfo = () => {
   return (
     <div className="address-body-text">
@@ -36,17 +39,21 @@ const renderMainAccommodationInfo = () => {
       <br />
       <section className="sub-text">
         Please reference the Quirk/McDonald Wedding when reserving your room for
-        a special rate (when calling). The discounted rate expires on{' '}
+        a special rate (when calling). The discounted rate expired on{' '}
         <b>
           <u>May 10th, 2022</u>
         </b>
-        , please reserve your room by then if you wish to stay here.
-        Transportation will be provided to and from the wedding for guests
-        staying in this hotel. <br />
+        .
         <section>
-          <h4>After Party</h4>
+          <h4>Transportation Timeline</h4>
+          <ul className="timeline-item">
+            <li>{RSVP_CONTENT.preWeddingPickup[0]}</li>
+            <li>{RSVP_CONTENT.postWeddingPickup[0]}</li>
+            <li>{RSVP_CONTENT.postWeddingPickup[1]}</li>
+          </ul>
+          <h4>{afterPartyLabel}</h4>
           <section>{RSVP_CONTENT.afterParty}</section>
-          <h4>Breakfast</h4>
+          <h4>{breakfastLabel}</h4>
           <section>{RSVP_CONTENT.breakfast}</section>
         </section>
         <br /> Please click 'Book Now' to make a reservation.
@@ -68,13 +75,23 @@ const renderSecondAccommodationInfo = () => {
       <br />
       <div className="sub-text">
         Please reference the Quirk/McDonald Wedding when reserving your room for
-        a special rate (when calling). The discounted rate expires on{' '}
+        a special rate (when calling). The discounted rate expired on{' '}
         <b>
           <u>May 20th, 2022</u>
         </b>
-        , please reserve your room by then if you wish to stay here.
-        Transportation will be provided to and from the wedding for guests
-        staying in this hotel. <br />
+        .
+        <section>
+          <h4>Transportation Timeline</h4>
+          <ul className="timeline-item">
+            <li>{RSVP_CONTENT.preWeddingPickup[1]}</li>
+            <li>{RSVP_CONTENT.postWeddingPickup[0]}</li>
+            <li>{RSVP_CONTENT.postWeddingPickup[1]}</li>
+          </ul>
+          <h4>{afterPartyLabel}</h4>
+          <section>{RSVP_CONTENT.afterParty}</section>
+          <h4>{breakfastLabel}</h4>
+          <section>{RSVP_CONTENT.breakfast}</section>
+        </section>
         <br /> Please click 'Book Now' to make a reservation.
       </div>
     </div>

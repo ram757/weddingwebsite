@@ -13,8 +13,9 @@ const RSVPPage = () => {
     <div className="rsvp-page">
       <TitleTextCrunch text="RSVP" />
       <Typography variant="h1">
-        Wedding invitations were sent at the end of March of 2022.
-        <br />
+        Wedding invitations were sent at the end of March of 2022. <br />
+        Hopefully everyone has sent their RSVP by now :)
+        {/* <br />
         <br />
         Once received, please respond via the enclosed RSVP card and send back
         by
@@ -24,17 +25,17 @@ const RSVPPage = () => {
             <u>May 10th, 2022</u>
           </em>
         </b>
-        .
+        . */}
       </Typography>
       <Typography variant="h3">
-        On the RSVP card, please include the full name of everyone in your party
+        {/* On the RSVP card, please include the full name of everyone in your party
         who is attending as well as the entrée choice for each person.
         <br />
         <br />
         If you or any member of your party has any dietary restrictions you
         would like us to know about please write them on the RSVP card.
         <br />
-        <br />
+        <br /> */}
         If you have any questions or change of plans please contact us by phone
         or text at{' '}
         <b>
