@@ -43,6 +43,11 @@ const renderMainAccommodationInfo = () => {
         2022.
         <section>
           <h4>Transportation Timeline</h4>
+          <br />
+          Valet parking will be available at Phipps for FREE for the wedding!
+          It's highly encouraged to use valet instead of searching for parking
+          :)
+          <br />
           <ul className="timeline-item">
             <li>{RSVP_CONTENT.preWeddingPickup[0]}</li>
             <li>{RSVP_CONTENT.postWeddingPickup[0]}</li>
@@ -76,6 +81,10 @@ const renderSecondAccommodationInfo = () => {
         2022.
         <section>
           <h4>Wedding Day Transportation Timeline</h4>
+          <br />
+          Valet parking will be available at Phipps for FREE for the wedding!
+          It's highly encouraged to valet instead of searching for parking :)
+          <br />
           <ul className="timeline-item">
             <li>{RSVP_CONTENT.preWeddingPickup[1]}</li>
             <li>{RSVP_CONTENT.postWeddingPickup[0]}</li>

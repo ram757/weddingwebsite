@@ -132,7 +132,13 @@ export const faqList = [
     answer: (
       <span>
         There is parking available in front of Phipps on Schenley Drive as well
-        as parking along sidewalks of neighboring streets.&nbsp;
+        as parking along sidewalks of neighboring streets.
+        <br />
+        <b>
+          Valet parking will be available at Phipps for FREE for the wedding!
+          It's highly encouraged to valet instead of searching for parking.
+        </b>
+        <br />
         <em>
           <u>
             If you plan to drive, please appropriate enough time to find parking
