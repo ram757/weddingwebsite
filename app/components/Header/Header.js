@@ -65,7 +65,7 @@ class HeaderComponent extends React.Component {
               className="nav-bar-item"
             />
             <Tab
-              label="RSVP"
+              label="Wedding Day"
               value={ROUTE_MAP.RSVP}
               component={Link}
               to={ROUTE_MAP.RSVP}

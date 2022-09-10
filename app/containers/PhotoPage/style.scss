@@ -1,4 +1,4 @@
-.rsvp-page {
+.photo-page {
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -33,20 +33,5 @@
 
   .center-item {
     text-align: center;
-  }
-
-  .center-card {
-    max-width: 900px;
-    text-align: center;
-    margin: auto;
-    font-family: "Avenir", "Helvetica", "Arial", serif !important;
-  }
-
-  //Material Overrides
-  .time--override {
-    flex: .30;
-  }
-  .event--override {
-    text-align: left;
   }
 }

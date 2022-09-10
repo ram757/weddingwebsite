@@ -15,6 +15,7 @@ import RSVPPage from '../RSVPPage/Loadable';
 import AccommodationsPage from '../AccommodationsPage/Loadable';
 import RegistryPage from '../RegistryPage/Loadable';
 import PittsburghPage from '../PittsburghPage/Loadable';
+import PhotoPage from '../PhotoPage/Loadable';
 import FAQPage from '../FAQPage/Loadable';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -41,7 +42,10 @@ const App = () => (
         <Route exact path={ROUTE_MAP.PITTSBURGH} component={PittsburghPage} />
         <Route exact path={ROUTE_MAP.REGISTRY} component={RegistryPage} />
         <Route exact path={ROUTE_MAP.BOGUS} component={BogusPage} />
-        <Route path={ROUTE_MAP.FAQ} component={FAQPage} />
+        <Route exact path={ROUTE_MAP.FAQ} component={FAQPage} />
+        <Route exact path={ROUTE_MAP.PHOTOS} component={PhotoPage} />
+        <Route exact path={ROUTE_MAP.PHOTO} component={PhotoPage} />
+        <Route exact path={ROUTE_MAP.PICTURES} component={PhotoPage} />
         <Route path={ROUTE_MAP.EMPTY} component={HomePage} />
       </Switch>
       <Footer />
